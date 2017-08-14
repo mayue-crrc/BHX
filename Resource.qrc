@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/Arrow_Left.PNG</file>
+        <file>images/Arrow_Right.PNG</file>
+        <file>images/MC1Active.bmp</file>
+        <file>images/MC2Active.bmp</file>
+        <file>images/help.png</file>
+        <file>images/pantodown.png</file>
+        <file>images/pantomid.png</file>
+        <file>images/pantoup.png</file>
+        <file>images/button.png</file>
+        <file>images/dooriso.bmp</file>
+        <file>images/warning.bmp</file>
+        <file>images/fault.bmp</file>
+    </qresource>
+</RCC>

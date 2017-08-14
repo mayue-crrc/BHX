@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleFactoryTestPage2</class>
+ <widget class="QWidget" name="VehicleFactoryTestPage2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton
+{
+	font: 12px;
+	color: black;
+	border:2px solid gray;
+	background-color: qlineargradient(x1: 0, y1 :0, x2: 1, y2: 1,
+				stop:0 white, stop: 0.618 rgb(213, 213, 238), stop: 1 white);
+}</string>
+  </property>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_11">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>150</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MDO1_9">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>400</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4车 电热2路</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_4">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>20</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4 6 车 停车制动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_10">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>140</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 降弓到位</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo2State_1">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>220</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_6">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>80</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 替代制动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO2_8">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>270</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 照明减载</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMDo1State_9">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>410</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO2_5">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>210</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 电热2路</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleFactoryTestPage_background">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>800</width>
+     <height>520</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(48, 48, 48);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMDo1State_5">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>350</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>30</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_teststart">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>460</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px ;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>点击按钮
+进入测试模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO2_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>210</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 强迫泵风</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 撒沙信号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_1">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>30</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo2State_12">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>280</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_13">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>150</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>30</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_7">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MDO1_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>340</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4车 撒沙信号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMDo1State_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>350</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4 6 车 保持制动</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMDo1State_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>350</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_8">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>80</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 蜂鸣器</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_9">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>150</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMDo1State_10">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>410</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MDO1_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>340</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4车 替代制动</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo2State_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>220</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MDO1_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4车 强迫泵风</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_5">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_7">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>80</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 Deadman事件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_2car">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>470</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px ;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>4 6 车</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo2State_4">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>220</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_13">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>140</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 电制动工作</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_9">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>140</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 升弓到位</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo2State_8">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>280</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_4">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>30</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 零速信号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo2State_7">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>280</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO2_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>210</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 电热1路</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO2_12">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>270</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 里程计</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO2_7">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>270</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 蓄电池伴热</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_1car">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>470</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px ;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>1 3 车</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MDO1_8">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>340</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4车 电热1路</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_back">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>470</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px ;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_11">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 牵引准备就绪</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_10">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>150</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MDO1_10">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>400</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>4车 蓄电池伴热</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO1_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>20</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 磁轨制动施加</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMDo1State_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>350</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo2State_5">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>220</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleFactoryTestPage_button_MCDO2_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>210</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>6车 牵引封锁旁路</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lVehicleFactoryTestPage_blMCDo1State_6">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>90</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 12px;
+border: 1px groove yellow;
+background-color: gray;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>VehicleFactoryTestPage_background</zorder>
+  <zorder>VehicleFactoryTestPage_button_MDO1_9</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_4</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_10</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_6</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO2_8</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO2_5</zorder>
+  <zorder>VehicleFactoryTestPage_button_teststart</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO2_3</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_3</zorder>
+  <zorder>VehicleFactoryTestPage_button_MDO1_3</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_5</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_8</zorder>
+  <zorder>VehicleFactoryTestPage_button_MDO1_5</zorder>
+  <zorder>VehicleFactoryTestPage_button_MDO1_2</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_7</zorder>
+  <zorder>VehicleFactoryTestPage_button_2car</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_13</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_9</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_2</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO2_4</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO2_12</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO2_7</zorder>
+  <zorder>VehicleFactoryTestPage_button_1car</zorder>
+  <zorder>VehicleFactoryTestPage_button_MDO1_8</zorder>
+  <zorder>VehicleFactoryTestPage_button_back</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_11</zorder>
+  <zorder>VehicleFactoryTestPage_button_MDO1_10</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO1_1</zorder>
+  <zorder>VehicleFactoryTestPage_button_MCDO2_1</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo2State_4</zorder>
+  <zorder>lVehicleFactoryTestPage_blMDo1State_10</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_1</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_10</zorder>
+  <zorder>lVehicleFactoryTestPage_blMDo1State_8</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo2State_5</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo2State_3</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_2</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_9</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo2State_1</zorder>
+  <zorder>lVehicleFactoryTestPage_blMDo1State_2</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_5</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo2State_8</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_8</zorder>
+  <zorder>lVehicleFactoryTestPage_blMDo1State_9</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_11</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_4</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo2State_12</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_13</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_3</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo2State_7</zorder>
+  <zorder>lVehicleFactoryTestPage_blMDo1State_3</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_6</zorder>
+  <zorder>lVehicleFactoryTestPage_blMDo1State_5</zorder>
+  <zorder>lVehicleFactoryTestPage_blMCDo1State_7</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

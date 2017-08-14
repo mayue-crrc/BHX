@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleTCUPage</class>
+ <widget class="QWidget" name="VehicleTCUPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	font:  14px;
+	color: black;
+	border:2px solid;
+}</string>
+  </property>
+  <widget class="QLabel" name="VehicleTCUPage_background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>440</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(216, 216, 216);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleTCUPage_Button_NextPage">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>395</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  16px;
+color: rgb(0, 0, 0);
+background-color: rgb(216, 216, 216);
+border:2px solid black;
+border-radius:10px;
+padding:2px 4px;</string>
+   </property>
+   <property name="text">
+    <string>下一页</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleTCUPage_Label_Page">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>390</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px;
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleTCUPage_Button_PrePage">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>395</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  16px;
+color: rgb(0, 0, 0);
+background-color: rgb(216, 216, 216);
+border:2px solid black;
+border-radius:10px;
+padding:2px 4px;</string>
+   </property>
+   <property name="text">
+    <string>上一页</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

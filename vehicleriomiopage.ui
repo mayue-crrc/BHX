@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleRIOMIOPage</class>
+ <widget class="QWidget" name="VehicleRIOMIOPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="VehicleRIOMIOPage_button_back">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>480</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleRIOMIOPage_button_prepage">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>480</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>▲</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleRIOMIOPage_button_nextpage">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>480</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>▼</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleRIOMIOPage_button_MC1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>470</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>MC1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleRIOMIOPage_button_M1">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>470</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>M1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleRIOMIOPage_button_M2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>470</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>M2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleRIOMIOPage_button_MC2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>470</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>MC2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleRIOMIOPage_Label_Page">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>480</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleRIOMIOPage_background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>520</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(48, 48, 48);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>VehicleRIOMIOPage_background</zorder>
+  <zorder>VehicleRIOMIOPage_button_back</zorder>
+  <zorder>VehicleRIOMIOPage_button_prepage</zorder>
+  <zorder>VehicleRIOMIOPage_button_nextpage</zorder>
+  <zorder>VehicleRIOMIOPage_button_MC1</zorder>
+  <zorder>VehicleRIOMIOPage_button_M1</zorder>
+  <zorder>VehicleRIOMIOPage_button_M2</zorder>
+  <zorder>VehicleRIOMIOPage_button_MC2</zorder>
+  <zorder>VehicleRIOMIOPage_Label_Page</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleRunPage</class>
+ <widget class="QWidget" name="VehicleRunPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(34, 145, 255);</string>
+  </property>
+  <widget class="QLabel" name="VehicleRun_background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>440</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_alarmcount">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>410</y>
+     <width>210</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_totalmil">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>410</y>
+     <width>210</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px;
+color: rgb(0, 0, 0);
+background-color: rgb(51, 153, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_todaymil">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>410</y>
+     <width>210</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px;
+color: rgb(0, 0, 0);
+background-color: rgb(51, 153, 255);
+background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState1">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState2">
+   <property name="geometry">
+    <rect>
+     <x>445</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState4">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_ACUState1">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>250</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_ACUState2">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>250</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_ACUState3">
+   <property name="geometry">
+    <rect>
+     <x>569</x>
+     <y>250</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_ACUState4">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>250</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_HVACState3">
+   <property name="geometry">
+    <rect>
+     <x>569</x>
+     <y>280</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_HVACState2">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>280</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_HVACState1">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>280</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_HVACState4">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>280</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_BCUState2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>334</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_BCUState5">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>334</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>230</y>
+     <width>430</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(127, 127, 127);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>260</y>
+     <width>430</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(127, 127, 127);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>290</y>
+     <width>430</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(127, 127, 127);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>344</y>
+     <width>430</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(127, 127, 127);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>380</y>
+     <width>430</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(127, 127, 127);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1ERM">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1S3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:8px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1S4">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>空调</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1HMI">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M1S2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>辅助</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M1S4">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>空调</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M1S3">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M1S1">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>牵引</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M2S2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>辅助</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M2S4">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>空调</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M2S3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_M2S1">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>牵引</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2HMI">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2S4">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>空调</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2S3">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2ERM">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1VCU">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>360</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>VCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2VCU">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>360</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>VCU</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleRun_forward">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>170</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/images/Arrow_Left.PNG);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleRun_backward">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>170</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/images/Arrow_Right.PNG);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_RECState2">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>310</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_RECState3">
+   <property name="geometry">
+    <rect>
+     <x>569</x>
+     <y>310</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_RECState4">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>310</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_RECState1">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>310</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>320</y>
+     <width>430</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(127, 127, 127);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>220</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:  16px;</string>
+   </property>
+   <property name="text">
+    <string>牵引</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>250</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:  16px;</string>
+   </property>
+   <property name="text">
+    <string>辅助</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>280</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:  16px;</string>
+   </property>
+   <property name="text">
+    <string>空调</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>505</x>
+     <y>310</y>
+     <width>51</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:  16px;</string>
+   </property>
+   <property name="text">
+    <string>充电机</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>340</y>
+     <width>41</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:  16px;</string>
+   </property>
+   <property name="text">
+    <string>制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1S1">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>牵引</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1S2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>辅助</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2S2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>辅助</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2S1">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>360</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>牵引</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TP1S1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>370</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TP2S1">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>370</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState1_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState2_2">
+   <property name="geometry">
+    <rect>
+     <x>475</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState3_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_TCUState4_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>220</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC1PIS">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>PIS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_MC2PIS">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>380</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:12px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>PIS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_BCUState1">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>334</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_BCUState3">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>334</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_BCUState4">
+   <property name="geometry">
+    <rect>
+     <x>569</x>
+     <y>334</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VRun_label_BCUState6">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>334</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14px, &quot;微软雅黑&quot;;border-color: rgb(0, 0, 0);border:2px solid;background-color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>VehicleRun_background</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_7</zorder>
+  <zorder>VRun_label_alarmcount</zorder>
+  <zorder>VRun_label_totalmil</zorder>
+  <zorder>VRun_label_todaymil</zorder>
+  <zorder>VRun_label_TCUState1</zorder>
+  <zorder>VRun_label_TCUState2</zorder>
+  <zorder>VRun_label_TCUState3</zorder>
+  <zorder>VRun_label_TCUState4</zorder>
+  <zorder>VRun_label_ACUState1</zorder>
+  <zorder>VRun_label_ACUState2</zorder>
+  <zorder>VRun_label_ACUState3</zorder>
+  <zorder>VRun_label_ACUState4</zorder>
+  <zorder>VRun_label_HVACState3</zorder>
+  <zorder>VRun_label_HVACState2</zorder>
+  <zorder>VRun_label_HVACState1</zorder>
+  <zorder>VRun_label_HVACState4</zorder>
+  <zorder>VRun_label_BCUState2</zorder>
+  <zorder>VRun_label_BCUState5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>VRun_label_MC1ERM</zorder>
+  <zorder>VRun_label_MC1S3</zorder>
+  <zorder>VRun_label_MC1S4</zorder>
+  <zorder>VRun_label_MC1HMI</zorder>
+  <zorder>VRun_label_M1S2</zorder>
+  <zorder>VRun_label_M1S4</zorder>
+  <zorder>VRun_label_M1S3</zorder>
+  <zorder>VRun_label_M1S1</zorder>
+  <zorder>VRun_label_M2S2</zorder>
+  <zorder>VRun_label_M2S4</zorder>
+  <zorder>VRun_label_M2S3</zorder>
+  <zorder>VRun_label_M2S1</zorder>
+  <zorder>VRun_label_MC2HMI</zorder>
+  <zorder>VRun_label_MC2S4</zorder>
+  <zorder>VRun_label_MC2S3</zorder>
+  <zorder>VRun_label_MC2ERM</zorder>
+  <zorder>VRun_label_MC1VCU</zorder>
+  <zorder>VRun_label_MC2VCU</zorder>
+  <zorder>VehicleRun_forward</zorder>
+  <zorder>VehicleRun_backward</zorder>
+  <zorder>VRun_label_RECState2</zorder>
+  <zorder>VRun_label_RECState3</zorder>
+  <zorder>VRun_label_RECState4</zorder>
+  <zorder>VRun_label_RECState1</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>VRun_label_MC1S1</zorder>
+  <zorder>VRun_label_MC1S2</zorder>
+  <zorder>VRun_label_MC2S2</zorder>
+  <zorder>VRun_label_MC2S1</zorder>
+  <zorder>VRun_label_TP1S1</zorder>
+  <zorder>VRun_label_TP2S1</zorder>
+  <zorder>VRun_label_TCUState1_2</zorder>
+  <zorder>VRun_label_TCUState2_2</zorder>
+  <zorder>VRun_label_TCUState3_2</zorder>
+  <zorder>VRun_label_TCUState4_2</zorder>
+  <zorder>VRun_label_MC1PIS</zorder>
+  <zorder>VRun_label_MC2PIS</zorder>
+  <zorder>VRun_label_BCUState1</zorder>
+  <zorder>VRun_label_BCUState3</zorder>
+  <zorder>VRun_label_BCUState4</zorder>
+  <zorder>VRun_label_BCUState6</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleDatetimeSetPage</class>
+ <widget class="QWidget" name="VehicleDatetimeSetPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	font:  18px;
+	color: black;
+	border:2px solid;
+}
+QLineEdit
+{
+	background-color: rgb(170, 170, 255);
+font: 75 bold 20px;
+border:3px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);
+
+}</string>
+  </property>
+  <widget class="QLabel" name="VehicleDatetimeSetPage_background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>440</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num9">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>230</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>9</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num8">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>230</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>70</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_confirm">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>310</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num5">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>150</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num0">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>310</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>150</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_clear">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>310</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_Num1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleDatetimeSetPage_background_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>440</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(45, 45, 45);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_clear_2">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>360</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 255, 0);
+border:3px solid;
+border-color: rgb(255, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(48, 48, 48);
+border-color: rgb(48, 48, 48);
+font: 18pt &quot;Bitstream Charter&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>年</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_yearset">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>80</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 255);
+font: 75 bold 20px ;
+border:5px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_monthset">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>80</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 255);
+font: 75 bold 20px ;
+border:5px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_dayset">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>80</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 255);
+font: 75 bold 20px ;
+border:5px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_hourset">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>160</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 255);
+font: 75 bold 20px ;
+border:5px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_minset">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>160</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 255);
+font: 75 bold 20px ;
+border:5px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleDatetimeSetPage_Button_secset">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>160</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 255);
+font: 75 bold 20px ;
+border:5px solid rgb(255, 255, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VHVAC_Label_Tempshow">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>230</y>
+     <width>391</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(45, 45, 45);
+border-color: rgb(46, 46, 46);
+color: rgb(255, 255, 255);
+font: 75 bold 18px &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="text">
+    <string>点击上方紫色方块,选中修改项,进行修改
+
+修改完成后点击“确定”按键，完成修改</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(48, 48, 48);
+border-color: rgb(48, 48, 48);
+font: 18pt &quot;Bitstream Charter&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>月</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>80</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(48, 48, 48);
+border-color: rgb(48, 48, 48);
+font: 18pt &quot;Bitstream Charter&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>日</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(48, 48, 48);
+border-color: rgb(48, 48, 48);
+font: 18pt &quot;Bitstream Charter&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>时</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(48, 48, 48);
+border-color: rgb(48, 48, 48);
+font: 18pt &quot;Bitstream Charter&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>分</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>160</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(48, 48, 48);
+border-color: rgb(48, 48, 48);
+font: 18pt &quot;Bitstream Charter&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>秒</string>
+   </property>
+  </widget>
+  <zorder>VehicleDatetimeSetPage_background</zorder>
+  <zorder>VehicleDatetimeSetPage_background_2</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_clear_2</zorder>
+  <zorder>label</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_yearset</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_monthset</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_dayset</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_hourset</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_minset</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_secset</zorder>
+  <zorder>VHVAC_Label_Tempshow</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num7</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num2</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num9</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num1</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num4</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num5</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num6</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num8</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_confirm</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num0</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_Num3</zorder>
+  <zorder>VehicleDatetimeSetPage_Button_clear</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CanDebugPage</class>
+ <widget class="QWidget" name="CanDebugPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(216, 216, 216);</string>
+  </property>
+  <widget class="QPushButton" name="CanDebugPage_Button_back">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>349</y>
+     <width>50</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>退
+出</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CanDebugPage_Button_prepage">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>100</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px ;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>▲</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CanDebugPage_Button_nextpage">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>170</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>▼</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CanDebugPage_Label_Page">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>239</y>
+     <width>50</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 bold 18px ;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CanDebugPage_label_mil">
+   <property name="geometry">
+    <rect>
+     <x>725</x>
+     <y>16</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>CanDebugPage_Label_Page</zorder>
+  <zorder>CanDebugPage_Button_back</zorder>
+  <zorder>CanDebugPage_Button_prepage</zorder>
+  <zorder>CanDebugPage_Button_nextpage</zorder>
+  <zorder>CanDebugPage_label_mil</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

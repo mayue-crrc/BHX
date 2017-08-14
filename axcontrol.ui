@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AxControl</class>
+ <widget class="QWidget" name="AxControl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>184</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 18px;
+    color: black;
+	background-color: rgb(113, 113, 198);
+	border:1px solid white;
+	border-radius: 5px;
+}
+
+QLabel
+{
+	font: 12px;
+	color: black;
+	border:2px solid gray;
+	background-color: qlineargradient(x1: 0, y1 :0, x2: 1, y2: 1,
+				stop:0 white, stop: 0.618 rgb(213, 213, 238), stop: 1 white);
+}</string>
+  </property>
+  <widget class="QLabel" name="lblAin8Voltage">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>146</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin2Name">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>74</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTitle">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>2</y>
+     <width>41</width>
+     <height>182</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AX</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin6Voltage">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>74</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIn2Name">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>2</y>
+     <width>181</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电流值 / 对应信号参考值</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin3Current">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>110</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin5Voltage">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>38</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin4Name">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>146</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblInName">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>2</y>
+     <width>181</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电压值 / 对应信号参考值</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin4Current">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>146</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin6Name">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>74</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN6</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin8Name">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>146</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN8</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin5Name">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>38</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN5</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin3Name">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin2Current">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>74</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin7Name">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>110</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN7</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin1Name">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>38</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AIN1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIn3Name">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>2</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>信号名称</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblIn1Name">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>2</y>
+     <width>161</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>信号名称</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin1Current">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>38</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin7Voltage">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>110</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin2State">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>74</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin4State">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>146</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin1State">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>38</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin3State">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>110</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin6State">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>74</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin8State">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>146</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin5State">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>38</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAin7State">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>110</y>
+     <width>91</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

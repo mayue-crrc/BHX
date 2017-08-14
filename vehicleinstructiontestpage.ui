@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VehicleInstructionTestPage</class>
+ <widget class="QWidget" name="VehicleInstructionTestPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="VITest_background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>440</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(179, 179, 179);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L1R1">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>40</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+MC1-1切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L1R2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>40</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+M1-1 切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L1R3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>40</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+M2-1 切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L1R4">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>40</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+MC2-1 切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_prePage">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>370</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px ;
+background-color: rgb(179, 179, 179);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>上一页</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_nextPage">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>370</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px ;
+background-color: rgb(179, 179, 179);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>下一页</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VITest_Label_Page">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>370</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_closePage">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>370</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 18px ;
+background-color: rgb(179, 179, 179);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L2R1">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>150</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+MC1-2切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L2R3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>150</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+M2-2 切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L2R4">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>150</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+MC2-2 切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L2R2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>150</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+M1-2 切除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L3R1">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>260</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+MC1 恢复</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L3R3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>260</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+M2 恢复</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L3R4">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>260</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+MC2 恢复</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_L3R2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>260</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>牵引逆变器
+M1 恢复</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>370</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 16px ;
+</string>
+   </property>
+   <property name="text">
+    <string>复位按键抬起前
+请不要离开该页面</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VITest_Button_TCUTest">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>360</y>
+     <width>120</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+background-color: rgb(255, 192, 0);
+border:3px solid rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>单模块
+动车测试</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
