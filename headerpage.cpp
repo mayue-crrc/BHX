@@ -122,7 +122,7 @@ void HeaderPage::updatePage()
         break;
     }
 
-    if(m_crrcfault->getCurrentFaultListSize() > 0)
+    if(m_crrcfault->getConfirmFaultListSize() > 0)
     {
         ui->CurrentFaultBtn->show();
 
