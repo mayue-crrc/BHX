@@ -11,7 +11,7 @@ public:
     void updateDatabse(CrrcCan *crrcCan);
     MainGetDefaultPara* mydefaultpara;
     // default para
-    int HMIPosition;//,DefaultWheelValue,DefaultTrainCode;
+    int HMIPosition,DefaultWheelValue,DefaultTrainCode;
 public:
     // public port
     unsigned char VCUtoALL_year,VCUtoALL_month,VCUtoALL_day,VCUtoALL_hour,VCUtoALL_minute,VCUtoALL_second,VCUtoALL_codeHigh,VCUtoALL_codeLow;

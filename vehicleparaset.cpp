@@ -12,6 +12,8 @@ VehicleParaSet::VehicleParaSet(QWidget *parent) :
 
     m_tempstart=m_tempstop=m_monthstop1=m_monthstop2=0;
     timer2sEB = timer2sEBS = inputmode = timer3scount[0] = timer3scount[1] = timer3scount[2] = timer3scount[3] = timer3scount[4] = 0;
+    ui->VehicleParaSet_Label_wheelvalue->setText(QString::number(this->database->DefaultWheelValue+580));
+    ui->VehicleParaSet_Label_VechileNum->setText(QString::number(this->database->DefaultTrainCode));
 }
 
 VehicleParaSet::~VehicleParaSet()
@@ -181,11 +183,11 @@ void VehicleParaSet::on_VehicleParaSet_Button_mileset_pressed()
 void VehicleParaSet::on_VehicleParaSet_Button_wheeldiasetconfirm_pressed()
 {
     this->database->HMiCT_WheelSet_B1 = true;
-//    if(this->database->HMItoVCU_wheelvalue != this->database->DefaultWheelValue)
-//    {
-//        ParasettingPara->set("/Wheel/Wheel",this->database->HMItoVCU_wheelvalue);
-//    }
-//    this->database->DefaultWheelValue = this->database->HMItoVCU_wheelvalue;
+    if(this->database->HMItoVCU_wheelvalue != this->database->DefaultWheelValue)
+    {
+        ParasettingPara->set("/Wheel/Wheel",this->database->HMItoVCU_wheelvalue);
+    }
+    this->database->DefaultWheelValue = this->database->HMItoVCU_wheelvalue;
 
     ui->VehicleParaSet_Button_wheeldiasetconfirm->setStyleSheet(MY_BUTTON_DOWN);
     ui->VehicleParaSet_Button_wheeldiasetconfirm->setEnabled(false);
@@ -194,11 +196,11 @@ void VehicleParaSet::on_VehicleParaSet_Button_wheeldiasetconfirm_pressed()
 void VehicleParaSet::on_VehicleParaSet_Button_traincodesetconfirm_pressed()
 {
     this->database->HMiCT_SaveTrainNum_B1 = true;
-//    if(this->database->HMiCT_TrainNum_U8 != this->database->DefaultTrainCode)
-//    {
-//        ParasettingPara->set("/TrainCode/Code",this->database->HMiCT_TrainNum_U8);
-//    }
-//    this->database->DefaultTrainCode = this->database->HMiCT_TrainNum_U8;
+    if(this->database->HMiCT_TrainNum_U8 != this->database->DefaultTrainCode)
+    {
+        ParasettingPara->set("/TrainCode/Code",this->database->HMiCT_TrainNum_U8);
+    }
+    this->database->DefaultTrainCode = this->database->HMiCT_TrainNum_U8;
 
     ui->VehicleParaSet_Button_traincodesetconfirm->setStyleSheet(MY_BUTTON_DOWN);
     ui->VehicleParaSet_Button_traincodesetconfirm->setEnabled(false);

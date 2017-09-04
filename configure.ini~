@@ -8,10 +8,10 @@ life=1
 HMI=2
 
 [Wheel]
-Wheel=7
+Wheel=75
 
 [TrainCode]
-Code=66
+Code=16
 
 [FaultFileNo]
-FileNo=2
+FileNo=1

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclemc2riomiopage.h'
 **
-** Created: Tue Jul 18 10:16:03 2017
+** Created: Mon Sep 4 09:10:56 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

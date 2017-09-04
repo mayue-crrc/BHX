@@ -5,8 +5,8 @@ Database::Database()
 {
     mydefaultpara = new MainGetDefaultPara();
     HMIPosition = mydefaultpara->getInt("/Position/HMI");
-//    DefaultWheelValue = mydefaultpara->getInt("/Wheel/Wheel");
-//    DefaultTrainCode = mydefaultpara->getInt("/TrainCode/Code");
+    DefaultWheelValue = mydefaultpara->getInt("/Wheel/Wheel");
+    DefaultTrainCode = mydefaultpara->getInt("/TrainCode/Code");
 
     HMiCT_TrainNum_U8 = 0;//DefaultTrainCode;
     HMItoVCU_wheelvalue = 0;//DefaultWheelValue;

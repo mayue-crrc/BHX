@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclebcupage.h'
 **
-** Created: Tue Jul 18 10:15:55 2017
+** Created: Mon Sep 4 09:10:50 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
