@@ -1307,7 +1307,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR1_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18B,2);
         this->TR1_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18B,4);
-        this->TR1_1CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x28B,0);
+        this->TR1_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28B,4);
         this->TR1_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28B,1);
         this->TR1_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28B,2);
         //this->TR1_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38B,6);
@@ -1342,7 +1342,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR1_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48B,2);
         this->TR1_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48B,4);
-        this->TR1_2CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x1EB,0);
+        this->TR1_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1EB,4);
         this->TR1_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1EB,1);
         this->TR1_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1EB,2);
         //this->TR1_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2EB,6);
@@ -1378,7 +1378,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR2_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18C,2);
         this->TR2_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18C,4);
-        this->TR2_1CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x28C,0);
+        this->TR2_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28C,4);
         this->TR2_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28C,1);
         this->TR2_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28C,2);
         //this->TR2_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38C,6);
@@ -1413,7 +1413,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR2_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48C,2);
         this->TR2_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48C,4);
-        this->TR2_2CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x1EC,0);
+        this->TR2_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1EC,4);
         this->TR2_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1EC,1);
         this->TR2_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1EC,2);
         //this->TR2_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2EC,6);
@@ -1449,7 +1449,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR3_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18D,2);
         this->TR3_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18D,4);
-        this->TR3_1CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x28D,0);
+        this->TR3_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28D,4);
         this->TR3_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28D,1);
         this->TR3_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28D,2);
         //this->TR3_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38D,6);
@@ -1484,7 +1484,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR3_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48D,2);
         this->TR3_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48D,4);
-        this->TR3_2CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x1ED,0);
+        this->TR3_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1ED,4);
         this->TR3_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1ED,1);
         this->TR3_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1ED,2);
         //this->TR3_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2ED,6);
@@ -1520,7 +1520,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR4_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18E,2);
         this->TR4_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18E,4);
-        this->TR4_1CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x28E,0);
+        this->TR4_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28E,4);
         this->TR4_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28E,1);
         this->TR4_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28E,2);
         //this->TR4_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38E,6);
@@ -1555,7 +1555,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR4_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48E,2);
         this->TR4_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48E,4);
-        this->TR4_2CT_MotorSpeed_U8 = crrcCan->getUnsignedChar(0x1EE,0);
+        this->TR4_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1EE,4);
         this->TR4_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1EE,1);
         this->TR4_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1EE,2);
         //this->TR4_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2EE,6);

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehicleparasetting.h'
 **
-** Created: Mon Sep 4 09:10:53 2017
+** Created: Fri Sep 8 13:29:55 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

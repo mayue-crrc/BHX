@@ -674,14 +674,14 @@ void VehicleTCUPage::updatePage()
         names[3] <<"电机1速度"<<"电机2速度"<<"电机1温度"<<"电机2温度"
                  <<"载荷传感器1"<<"载荷传感器2"<<"车重"<<"";
 
-        states[3].push_back(QString::number(this->database->TR1_1CT_MotorSpeed_U8));
-        states[3].push_back(QString::number(this->database->TR2_1CT_MotorSpeed_U8));
-        states[3].push_back(QString::number(this->database->TR3_1CT_MotorSpeed_U8));
-        states[3].push_back(QString::number(this->database->TR4_1CT_MotorSpeed_U8));
-        states[3].push_back(QString::number(this->database->TR1_2CT_MotorSpeed_U8));
-        states[3].push_back(QString::number(this->database->TR2_2CT_MotorSpeed_U8));
-        states[3].push_back(QString::number(this->database->TR3_2CT_MotorSpeed_U8));
-        states[3].push_back(QString::number(this->database->TR4_2CT_MotorSpeed_U8));
+        states[3].push_back(QString::number(this->database->TR1_1CT_MotorSpeed_U16*0.01,10,2));
+        states[3].push_back(QString::number(this->database->TR2_1CT_MotorSpeed_U16*0.01,10,2));
+        states[3].push_back(QString::number(this->database->TR3_1CT_MotorSpeed_U16*0.01,10,2));
+        states[3].push_back(QString::number(this->database->TR4_1CT_MotorSpeed_U16*0.01,10,2));
+        states[3].push_back(QString::number(this->database->TR1_2CT_MotorSpeed_U16*0.01,10,2));
+        states[3].push_back(QString::number(this->database->TR2_2CT_MotorSpeed_U16*0.01,10,2));
+        states[3].push_back(QString::number(this->database->TR3_2CT_MotorSpeed_U16*0.01,10,2));
+        states[3].push_back(QString::number(this->database->TR4_2CT_MotorSpeed_U16*0.01,10,2));
         states[3].push_back(QString::number(this->database->TR1_1CT_MotorTemp_U8));
         states[3].push_back(QString::number(this->database->TR2_1CT_MotorTemp_U8));
         states[3].push_back(QString::number(this->database->TR3_1CT_MotorTemp_U8));
