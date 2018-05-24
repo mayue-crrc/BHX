@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclerunpage.h'
 **
-** Created: Fri Sep 8 13:29:49 2017
+** Created: Fri May 11 08:57:45 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,18 +23,23 @@ static const uint qt_meta_data_VehicleRunPage[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: signature, parameters, type, tag, flags
+      16,   15,   15,   15, 0x08,
+      49,   15,   15,   15, 0x08,
+
        0        // eod
 };
 
 static const char qt_meta_stringdata_VehicleRunPage[] = {
-    "VehicleRunPage\0"
+    "VehicleRunPage\0\0on_VRun_btn_confirmall_pressed()\0"
+    "on_VRun_btn_confirm_pressed()\0"
 };
 
 const QMetaObject VehicleRunPage::staticMetaObject = {
@@ -64,6 +69,14 @@ int VehicleRunPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = BasePage::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: on_VRun_btn_confirmall_pressed(); break;
+        case 1: on_VRun_btn_confirm_pressed(); break;
+        default: ;
+        }
+        _id -= 2;
+    }
     return _id;
 }
 QT_END_MOC_NAMESPACE

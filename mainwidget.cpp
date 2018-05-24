@@ -34,7 +34,7 @@
 #include "vehiclecurrentfaultpage.h"
 #include "vehiclefactorytestpage.h"
 #include "vehiclefactorytestpage2.h"
-
+#include "vehiclewheelsetpage.h"
 // 2017-8-14 add sandbox
 #include "ctrlalarmbarh.h"
 
@@ -97,6 +97,7 @@ MainWidget::MainWidget(QWidget *parent) :
 
     this->vehicleRunPage = new VehicleRunPage(this);
     this->vehicleRunPage->setMyBase(uMiddle, QString("运行页面"));
+    this->vehicleRunPage->GetcrrcFaultInfo(crrcFault);
 
     this->vehicleStatesPage = new VehicleStatesPage(this);
     this->vehicleStatesPage->setMyBase(uMiddle,QString("车辆页面"));
@@ -183,6 +184,9 @@ MainWidget::MainWidget(QWidget *parent) :
     this->vehicleCurrentFaultPage->setMyBase(uMiddle,QString("当前故障"));
     vehicleCurrentFaultPage->GetcrrcFaultInfo(crrcFault);
 
+    this->vehicleWheelSetPage = new VehicleWheelSetPage(this);
+    this->vehicleWheelSetPage->setMyBase(uMiddle,QString("参数设定1"));
+
     // connect the window with the enum
     this->widgets.insert(uNavigator,this->navigatorPage);
     this->widgets.insert(uVehicleRunPage, this->vehicleRunPage);
@@ -212,6 +216,7 @@ MainWidget::MainWidget(QWidget *parent) :
     this->widgets.insert(uVehicleCurrentFaultPage,this->vehicleCurrentFaultPage);
     this->widgets.insert(uVehicleFactoryTestPage,this->vehicleFactoryTestPage);
     this->widgets.insert(uVehicleFactoryTestPage2,this->vehicleFactoryTestPage2);
+    this->widgets.insert(uVehicleWheelSetPage,this->vehicleWheelSetPage);
 
 }
 
@@ -292,6 +297,9 @@ void MainWidget::updatePage()
     if (counter % 5 == 0 && (faultdelaycnt++ > 50))
     {
         crrcFault->synchronize(crrcCan);
+        // 开启故障滚动
+        this->vehicleRunPage->startRollingFault(true);
+
         faultdelaycnt = 60;
         // both 2 VCU offline   fault continue 3.3s ,show a widget
 //#ifndef USER_DEBUG_MODE
@@ -431,11 +439,15 @@ void MainWidget::showEvent(QShowEvent *event)
             crrcCan->addSourcePort(0x395,8);
             crrcCan->addSourcePort(0x495,8);
             crrcCan->addSourcePort(0x19b,8);
-            crrcCan->addSinkPort(0x196,8);
+            crrcCan->addSourcePort(0x39b,8);
+
+            crrcCan->addSinkPort(0x196,8);//他车显示屏发送的生命信号
             crrcCan->addSinkPort(0x215,8);
             crrcCan->addSinkPort(0x315,8);
             crrcCan->addSinkPort(0x415,8);
             crrcCan->addSinkPort(0x515,8);
+            crrcCan->addSinkPort(0x21B,8);
+            crrcCan->addSinkPort(0x41B,8);
 
 
         }else if(database->HMIPosition == 2)
@@ -447,12 +459,16 @@ void MainWidget::showEvent(QShowEvent *event)
             crrcCan->addSourcePort(0x396,8);
             crrcCan->addSourcePort(0x496,8);
             crrcCan->addSourcePort(0x29b,8);
+            crrcCan->addSourcePort(0x49b,8);
 
             crrcCan->addSinkPort(0x195,8);
             crrcCan->addSinkPort(0x216,8);
             crrcCan->addSinkPort(0x316,8);
             crrcCan->addSinkPort(0x416,8);
             crrcCan->addSinkPort(0x516,8);
+            crrcCan->addSinkPort(0x31B,8);
+            crrcCan->addSinkPort(0x51B,8);
+
         }
         crrcCan->addSinkPort(0x203,8);
         crrcCan->addSinkPort(0x186,8);
@@ -567,7 +583,18 @@ void MainWidget::showEvent(QShowEvent *event)
         crrcCan->addSinkPort(0x20C,8);
         crrcCan->addSinkPort(0x20D,8);
         crrcCan->addSinkPort(0x20E,8);
-
+        crrcCan->addSinkPort(0x27E,8); //VCU-ATC
+        crrcCan->addSinkPort(0x37E,8);
+        crrcCan->addSinkPort(0x278,8);
+        crrcCan->addSinkPort(0x378,8);
+        crrcCan->addSinkPort(0x1FE,8); //ATC-VCU
+        crrcCan->addSinkPort(0x2FE,8);
+        crrcCan->addSinkPort(0x3FE,8);
+        crrcCan->addSinkPort(0x4FE,8);
+        crrcCan->addSinkPort(0x1F8,8);
+        crrcCan->addSinkPort(0x2F8,8);
+        crrcCan->addSinkPort(0x3F8,8);
+        crrcCan->addSinkPort(0x4F8,8);
         this->vehicleRunPage->show();
         timer->start(333);
         // add logic fault ports

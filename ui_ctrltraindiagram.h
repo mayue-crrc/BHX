@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ctrltraindiagram.ui'
 **
-** Created: Tue Jul 18 10:27:13 2017
+** Created: Sat Oct 14 09:26:48 2017
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

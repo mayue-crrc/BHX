@@ -53,7 +53,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>61</width>
+     <width>51</width>
      <height>38</height>
     </rect>
    </property>
@@ -66,13 +66,14 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">font:18px;
+    <string notr="true">font:16px;
 background-color: rgb(115, 115, 115);
 color: rgb(255, 255, 255);
 </string>
    </property>
    <property name="text">
-    <string>网压</string>
+    <string>TP1
+网压</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -81,7 +82,7 @@ color: rgb(255, 255, 255);
   <widget class="QLabel" name="Line1_2">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>114</x>
      <y>0</y>
      <width>2</width>
      <height>78</height>
@@ -97,7 +98,7 @@ color: rgb(255, 255, 255);
   <widget class="QLabel" name="Line1_3">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>0</y>
      <width>2</width>
      <height>78</height>
@@ -113,7 +114,7 @@ color: rgb(255, 255, 255);
   <widget class="QLabel" name="Line1_4">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>320</x>
      <y>0</y>
      <width>2</width>
      <height>78</height>
@@ -129,7 +130,7 @@ color: rgb(255, 255, 255);
   <widget class="QLabel" name="Line1_5">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>430</x>
      <y>0</y>
      <width>2</width>
      <height>78</height>
@@ -145,7 +146,7 @@ color: rgb(255, 255, 255);
   <widget class="QLabel" name="Line1_6">
    <property name="geometry">
     <rect>
-     <x>580</x>
+     <x>590</x>
      <y>0</y>
      <width>2</width>
      <height>78</height>
@@ -161,14 +162,14 @@ color: rgb(255, 255, 255);
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>120</x>
      <y>0</y>
-     <width>61</width>
+     <width>51</width>
      <height>38</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 18px;
+    <string notr="true">font: 16px;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -182,14 +183,14 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>190</x>
      <y>0</y>
-     <width>131</width>
+     <width>121</width>
      <height>38</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75  18px ;
+    <string notr="true">font: 75  16px ;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -205,7 +206,7 @@ background-color: rgb(115, 115, 115);</string>
     <rect>
      <x>0</x>
      <y>42</y>
-     <width>61</width>
+     <width>51</width>
      <height>36</height>
     </rect>
    </property>
@@ -224,9 +225,9 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="headerlabel_Current">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>120</x>
      <y>42</y>
-     <width>61</width>
+     <width>51</width>
      <height>36</height>
     </rect>
    </property>
@@ -245,14 +246,14 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="headerlabel_24VVoltage">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>190</x>
      <y>42</y>
-     <width>131</width>
+     <width>121</width>
      <height>36</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75  18px ;
+    <string notr="true">font: 75  16px ;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -266,14 +267,14 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="headerlabel_Date">
    <property name="geometry">
     <rect>
-     <x>307</x>
+     <x>330</x>
      <y>0</y>
-     <width>100</width>
+     <width>91</width>
      <height>38</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75  18px;
+    <string notr="true">font: 75  16px;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -287,14 +288,14 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="headerlabel_Time">
    <property name="geometry">
     <rect>
-     <x>307</x>
+     <x>330</x>
      <y>42</y>
-     <width>100</width>
+     <width>91</width>
      <height>36</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75  18px ;
+    <string notr="true">font: 75  16px ;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -308,14 +309,14 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="headerlabel_Positon">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>440</x>
      <y>0</y>
-     <width>160</width>
+     <width>141</width>
      <height>38</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75  18px;
+    <string notr="true">font: 75  16px;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -364,14 +365,14 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="headerlabel_Level">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>440</x>
      <y>42</y>
-     <width>81</width>
+     <width>71</width>
      <height>36</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75  18px ;
+    <string notr="true">font: 75  16px ;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -385,14 +386,14 @@ background-color: rgb(115, 115, 115);</string>
   <widget class="QLabel" name="headerlabel_speed">
    <property name="geometry">
     <rect>
-     <x>500</x>
+     <x>509</x>
      <y>42</y>
-     <width>80</width>
+     <width>71</width>
      <height>36</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75  18px ;
+    <string notr="true">font: 75  16px ;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
@@ -463,9 +464,9 @@ border: 1px groove yellow;
   <widget class="QLabel" name="headerlabel_limitspeed">
    <property name="geometry">
     <rect>
-     <x>587</x>
+     <x>596</x>
      <y>42</y>
-     <width>80</width>
+     <width>71</width>
      <height>36</height>
     </rect>
    </property>
@@ -482,19 +483,87 @@ border: 1px groove yellow;
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>587</x>
+     <x>596</x>
      <y>0</y>
-     <width>80</width>
+     <width>71</width>
      <height>38</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 18px;
+    <string notr="true">font: 16px;
 color: rgb(255, 255, 255);
 background-color: rgb(115, 115, 115);</string>
    </property>
    <property name="text">
     <string>限速值</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="headerlabel_Voltage_MC2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>42</y>
+     <width>51</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+color: rgb(255, 255, 255);
+background-color: rgb(115, 115, 115);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Line1_9">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>0</y>
+     <width>2</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(191, 191, 191);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>0</y>
+     <width>51</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:16px;
+background-color: rgb(115, 115, 115);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>TP2
+网压</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -525,6 +594,9 @@ background-color: rgb(115, 115, 115);</string>
   <zorder>Line1_8</zorder>
   <zorder>headerlabel_limitspeed</zorder>
   <zorder>label_4</zorder>
+  <zorder>headerlabel_Voltage_MC2</zorder>
+  <zorder>Line1_9</zorder>
+  <zorder>label_5</zorder>
  </widget>
  <resources/>
  <connections/>

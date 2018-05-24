@@ -25,7 +25,7 @@ void CanDebugPage::installCan(CrrcCan *pointer)
 void CanDebugPage::updatePage()
 {
     this->ui->CanDebugPage_label_mil->setText("累计里程\n\n" + QString::number(this->database->wR3Word3_wdiDistance)+
-                                              "km\n"+QString::number(this->database->wR3Word3_wdiDistanceMW) + "m");
+                                              "km\n");
     this->update();
 }
 

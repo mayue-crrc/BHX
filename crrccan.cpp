@@ -574,7 +574,7 @@ void CrrcCan::addSourcePort(unsigned short int port, unsigned char length)
 
         if (this->data.contains(port))
         {
-            qDebug() << "the port has already been in the port list, please check it" << __FILE__ << __LINE__;
+            qDebug() << "the port " << port<<"has already been in the port list, please check it" << __FILE__ << __LINE__;
         }
         else
         {
@@ -594,7 +594,7 @@ void CrrcCan::addSinkPort(unsigned short port, unsigned char length)
 
     if (this->data.contains(port))
     {
-        qDebug() << "the port has already been in the port list, please check it" << __FILE__ << __LINE__;
+        qDebug() << "the port" << port<<"has already been in the port list, please check it" << __FILE__ << __LINE__;
     }
     else
     {

@@ -8,6 +8,7 @@
 #include <QMap>
 
 #include "qdatetime.h"
+#include "qtimer.h"
 
 class CrrcCan;
 
@@ -35,8 +36,10 @@ struct history_fault_type
     QString start, end, code, name, position, device, description;
 };
 
-class CrrcFault
+class CrrcFault : public QObject
 {
+    Q_OBJECT
+
 public:
     CrrcFault(QString faultListPath, QString historyFilePath);
     void synchronize(CrrcCan *crrcCan);
@@ -70,6 +73,9 @@ public:
     QString getConfirmFaultDescription(unsigned short int index) const;
     unsigned short int getConfirmFaultListSize() const;
 
+    // add new fault occur func
+    bool NewFaultOccur;
+
 
     QString getFaultListFileVersion();
     QString getCrrcFaultVersion();
@@ -101,6 +107,14 @@ private:
     QList<current_fault_type> currentFaultList;
     QList<current_fault_type> confirmFaultList;
 
+    QTimer *timer;
+    QTimer *HVACtimer;
+
+
+
+private slots:
+    void Delay200s();
+    void Delay120s();
 
 };
 

@@ -19,7 +19,7 @@
   <widget class="QLabel" name="VehicleHVACPage_background">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
      <y>0</y>
      <width>800</width>
      <height>440</height>
@@ -18908,7 +18908,7 @@ background-color:rgb(216,216,216)</string>
    <property name="geometry">
     <rect>
      <x>700</x>
-     <y>395</y>
+     <y>400</y>
      <width>90</width>
      <height>31</height>
     </rect>
@@ -18932,7 +18932,7 @@ padding:2px 4px;</string>
    <property name="geometry">
     <rect>
      <x>600</x>
-     <y>395</y>
+     <y>400</y>
      <width>90</width>
      <height>31</height>
     </rect>
@@ -19099,8 +19099,8 @@ padding:2px 4px;</string>
   <widget class="QPushButton" name="VHVAC_Button_heat2">
    <property name="geometry">
     <rect>
-     <x>710</x>
-     <y>340</y>
+     <x>700</x>
+     <y>360</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -19118,8 +19118,8 @@ padding:2px 4px;</string>
   <widget class="QPushButton" name="VHVAC_Button_heat1">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>340</y>
+     <x>620</x>
+     <y>360</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -22277,8 +22277,32 @@ border: 2px groove black;
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="VHVAC_helpbackground_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>330</y>
+     <width>171</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 16px;
+border: 2px groove black;
+</string>
+   </property>
+   <property name="text">
+    <string>客室电热
+
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>VehicleHVACPage_background</zorder>
   <zorder>VHVAC_helpbackground</zorder>
+  <zorder>VHVAC_helpbackground_2</zorder>
   <zorder>name3</zorder>
   <zorder>state4</zorder>
   <zorder>name4</zorder>

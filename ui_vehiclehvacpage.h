@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclehvacpage.ui'
 **
-** Created: Thu Jul 13 16:42:49 2017
+** Created: Mon Dec 4 11:44:42 2017
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -100,6 +100,7 @@ public:
     QLabel *intro7;
     QLabel *VHVAC_Label_help;
     QLabel *VHVAC_helpbackground;
+    QLabel *VHVAC_helpbackground_2;
 
     void setupUi(QWidget *VehicleHVACPage)
     {
@@ -109,7 +110,7 @@ public:
         VehicleHVACPage->setStyleSheet(QString::fromUtf8(""));
         VehicleHVACPage_background = new QLabel(VehicleHVACPage);
         VehicleHVACPage_background->setObjectName(QString::fromUtf8("VehicleHVACPage_background"));
-        VehicleHVACPage_background->setGeometry(QRect(0, 0, 800, 440));
+        VehicleHVACPage_background->setGeometry(QRect(10, 0, 800, 440));
         VehicleHVACPage_background->setStyleSheet(QString::fromUtf8("background-color: rgb(216, 216, 216);"));
         name3 = new QLabel(VehicleHVACPage);
         name3->setObjectName(QString::fromUtf8("name3"));
@@ -2550,7 +2551,7 @@ public:
         VHVAC_Label_Page->setAlignment(Qt::AlignCenter);
         VHVAC_Button_NextPage = new QPushButton(VehicleHVACPage);
         VHVAC_Button_NextPage->setObjectName(QString::fromUtf8("VHVAC_Button_NextPage"));
-        VHVAC_Button_NextPage->setGeometry(QRect(700, 395, 90, 31));
+        VHVAC_Button_NextPage->setGeometry(QRect(700, 400, 90, 31));
         VHVAC_Button_NextPage->setFocusPolicy(Qt::NoFocus);
         VHVAC_Button_NextPage->setStyleSheet(QString::fromUtf8("font: 75  16px ;\n"
 "color: rgb(0, 0, 0);\n"
@@ -2560,7 +2561,7 @@ public:
 "padding:2px 4px;"));
         VHVAC_Button_PrePage = new QPushButton(VehicleHVACPage);
         VHVAC_Button_PrePage->setObjectName(QString::fromUtf8("VHVAC_Button_PrePage"));
-        VHVAC_Button_PrePage->setGeometry(QRect(600, 395, 90, 31));
+        VHVAC_Button_PrePage->setGeometry(QRect(600, 400, 90, 31));
         VHVAC_Button_PrePage->setFocusPolicy(Qt::NoFocus);
         VHVAC_Button_PrePage->setStyleSheet(QString::fromUtf8("font: 75  16px ;\n"
 "color: rgb(0, 0, 0);\n"
@@ -2606,12 +2607,12 @@ public:
         label_row3->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
         VHVAC_Button_heat2 = new QPushButton(VehicleHVACPage);
         VHVAC_Button_heat2->setObjectName(QString::fromUtf8("VHVAC_Button_heat2"));
-        VHVAC_Button_heat2->setGeometry(QRect(710, 340, 71, 31));
+        VHVAC_Button_heat2->setGeometry(QRect(700, 360, 71, 31));
         VHVAC_Button_heat2->setFocusPolicy(Qt::NoFocus);
         VHVAC_Button_heat2->setStyleSheet(QString::fromUtf8(""));
         VHVAC_Button_heat1 = new QPushButton(VehicleHVACPage);
         VHVAC_Button_heat1->setObjectName(QString::fromUtf8("VHVAC_Button_heat1"));
-        VHVAC_Button_heat1->setGeometry(QRect(610, 340, 71, 31));
+        VHVAC_Button_heat1->setGeometry(QRect(620, 360, 71, 31));
         VHVAC_Button_heat1->setFocusPolicy(Qt::NoFocus);
         VHVAC_Button_heat1->setStyleSheet(QString::fromUtf8(""));
         label_line7 = new QLabel(VehicleHVACPage);
@@ -3015,8 +3016,16 @@ public:
         VHVAC_helpbackground->setStyleSheet(QString::fromUtf8("border-radius: 16px;\n"
 "border: 2px groove black;\n"
 ""));
+        VHVAC_helpbackground_2 = new QLabel(VehicleHVACPage);
+        VHVAC_helpbackground_2->setObjectName(QString::fromUtf8("VHVAC_helpbackground_2"));
+        VHVAC_helpbackground_2->setGeometry(QRect(610, 330, 171, 66));
+        VHVAC_helpbackground_2->setStyleSheet(QString::fromUtf8("border-radius: 16px;\n"
+"border: 2px groove black;\n"
+""));
+        VHVAC_helpbackground_2->setAlignment(Qt::AlignCenter);
         VehicleHVACPage_background->raise();
         VHVAC_helpbackground->raise();
+        VHVAC_helpbackground_2->raise();
         name3->raise();
         state4->raise();
         name4->raise();
@@ -3178,6 +3187,9 @@ public:
 "\346\250\241\345\274\217\344\270\213\n"
 "\344\270\215\345\217\257\350\260\203\350\212\202\346\270\251\345\272\246", 0, QApplication::UnicodeUTF8));
         VHVAC_helpbackground->setText(QString());
+        VHVAC_helpbackground_2->setText(QApplication::translate("VehicleHVACPage", "\345\256\242\345\256\244\347\224\265\347\203\255\n"
+"\n"
+"", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

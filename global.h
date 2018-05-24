@@ -46,7 +46,8 @@ enum pageIndex
     uVehicleInstructionSetPage,
     uVehicleCurrentFaultPage,
     uVehicleFactoryTestPage,
-    uVehicleFactoryTestPage2
+    uVehicleFactoryTestPage2,
+    uVehicleWheelSetPage,
 
 };
 #define DI_LENGTH (24 + 1)

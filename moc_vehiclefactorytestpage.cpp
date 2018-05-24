@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehiclefactorytestpage.h'
 **
-** Created: Fri Sep 8 13:30:08 2017
+** Created: Fri May 11 08:58:12 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

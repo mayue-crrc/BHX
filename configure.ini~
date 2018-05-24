@@ -8,10 +8,25 @@ life=1
 HMI=2
 
 [Wheel]
-Wheel=75
+Wheel1_TP1=1
+Wheel2_TP1=75
+Wheel3_TP1=2
+Wheel4_TP1=3
+Wheel1_TP2=4
+Wheel2_TP2=10
+Wheel3_TP2=30
+Wheel4_TP2=5
 
 [TrainCode]
-Code=16
+Code=12
 
 [FaultFileNo]
 FileNo=1
+
+[Temperature]
+starttemperature=-3
+stoptemperature=13
+
+[Month]
+startmonth=9
+stopmonth=1

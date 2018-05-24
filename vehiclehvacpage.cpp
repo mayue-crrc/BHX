@@ -907,6 +907,8 @@ void VehicleHVACPage::HideFirstPage()
     ui->VehicleHVACPage_background->hide();
     ui->VHVAC_Label_help->hide();
     ui->VHVAC_helpbackground->hide();
+    ui->VHVAC_helpbackground_2->hide();
+
 }
 void VehicleHVACPage::ShowFirstPage()
 {
@@ -992,6 +994,7 @@ void VehicleHVACPage::ShowFirstPage()
     ui->VehicleHVACPage_background->show();
     ui->VHVAC_Label_help->show();
     ui->VHVAC_helpbackground->show();
+    ui->VHVAC_helpbackground_2->show();
 
     //ui->VHVAC_Label_Tempshow_2->show();
 

@@ -682,14 +682,14 @@ void VehicleTCUPage::updatePage()
         states[3].push_back(QString::number(this->database->TR2_2CT_MotorSpeed_U16*0.01,10,2));
         states[3].push_back(QString::number(this->database->TR3_2CT_MotorSpeed_U16*0.01,10,2));
         states[3].push_back(QString::number(this->database->TR4_2CT_MotorSpeed_U16*0.01,10,2));
-        states[3].push_back(QString::number(this->database->TR1_1CT_MotorTemp_U8));
-        states[3].push_back(QString::number(this->database->TR2_1CT_MotorTemp_U8));
-        states[3].push_back(QString::number(this->database->TR3_1CT_MotorTemp_U8));
-        states[3].push_back(QString::number(this->database->TR4_1CT_MotorTemp_U8));
-        states[3].push_back(QString::number(this->database->TR1_2CT_MotorTemp_U8));
-        states[3].push_back(QString::number(this->database->TR2_2CT_MotorTemp_U8));
-        states[3].push_back(QString::number(this->database->TR3_2CT_MotorTemp_U8));
-        states[3].push_back(QString::number(this->database->TR4_2CT_MotorTemp_U8));
+        states[3].push_back(QString::number(this->database->TR1_1CT_MotorTemp_I16));
+        states[3].push_back(QString::number(this->database->TR2_1CT_MotorTemp_I16));
+        states[3].push_back(QString::number(this->database->TR3_1CT_MotorTemp_I16));
+        states[3].push_back(QString::number(this->database->TR4_1CT_MotorTemp_I16));
+        states[3].push_back(QString::number(this->database->TR1_2CT_MotorTemp_I16));
+        states[3].push_back(QString::number(this->database->TR2_2CT_MotorTemp_I16));
+        states[3].push_back(QString::number(this->database->TR3_2CT_MotorTemp_I16));
+        states[3].push_back(QString::number(this->database->TR4_2CT_MotorTemp_I16));
 
         states[3].push_back(QString::number((float)this->database->riomAxAi1Mc1/100,10,2));
         states[3].push_back(QString::number((float)this->database->riomAxAi1M1/100,10,2));

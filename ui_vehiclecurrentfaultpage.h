@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vehiclecurrentfaultpage.ui'
 **
-** Created: Mon Aug 14 10:52:46 2017
+** Created: Sat Oct 14 09:26:49 2017
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -120,20 +120,6 @@ public:
     QLabel *VF_label_F6_startdate;
     QLabel *VF_label_F5_starttime;
     QLabel *VF_label_F9_startdate;
-    QPushButton *VF_button_F1_confirm;
-    QPushButton *VF_button_F8_confirm;
-    QPushButton *VF_button_F10_confirm;
-    QPushButton *VF_button_F11_confirm;
-    QLabel *VF_intro_title_2;
-    QPushButton *VF_button_F9_confirm;
-    QPushButton *VF_button_F2_confirm;
-    QPushButton *VF_button_F7_confirm;
-    QPushButton *VF_button_F12_confirm;
-    QPushButton *VF_button_F3_confirm;
-    QPushButton *VF_button_F4_confirm;
-    QPushButton *VF_button_F5_confirm;
-    QPushButton *VF_button_F6_confirm;
-    QPushButton *VF_button_confirmALL;
 
     void setupUi(QWidget *VehicleCurrentFaultPage)
     {
@@ -142,7 +128,7 @@ public:
         VehicleCurrentFaultPage->resize(800, 440);
         VF_button_F12_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F12_intro->setObjectName(QString::fromUtf8("VF_button_F12_intro"));
-        VF_button_F12_intro->setGeometry(QRect(695, 367, 41, 31));
+        VF_button_F12_intro->setGeometry(QRect(745, 367, 41, 31));
         VF_button_F12_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F12_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F2_starttime = new QLabel(VehicleCurrentFaultPage);
@@ -196,7 +182,7 @@ public:
         VF_label_F3_position->setAlignment(Qt::AlignCenter);
         VF_label_F4_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F4_name->setObjectName(QString::fromUtf8("VF_label_F4_name"));
-        VF_label_F4_name->setGeometry(QRect(484, 135, 211, 31));
+        VF_label_F4_name->setGeometry(QRect(484, 135, 261, 31));
         VF_label_F4_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
@@ -217,7 +203,7 @@ public:
         VF_label_F2_startdate->setAlignment(Qt::AlignCenter);
         VF_button_F11_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F11_intro->setObjectName(QString::fromUtf8("VF_button_F11_intro"));
-        VF_button_F11_intro->setGeometry(QRect(695, 338, 41, 31));
+        VF_button_F11_intro->setGeometry(QRect(745, 338, 41, 31));
         VF_button_F11_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F11_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F10_startdate = new QLabel(VehicleCurrentFaultPage);
@@ -229,7 +215,7 @@ public:
         VF_label_F10_startdate->setAlignment(Qt::AlignCenter);
         VF_button_F10_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F10_intro->setObjectName(QString::fromUtf8("VF_button_F10_intro"));
-        VF_button_F10_intro->setGeometry(QRect(695, 309, 41, 31));
+        VF_button_F10_intro->setGeometry(QRect(745, 309, 41, 31));
         VF_button_F10_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F10_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F5_code = new QLabel(VehicleCurrentFaultPage);
@@ -258,7 +244,7 @@ public:
 "padding:2px 4px;"));
         VF_button_F3_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F3_intro->setObjectName(QString::fromUtf8("VF_button_F3_intro"));
-        VF_button_F3_intro->setGeometry(QRect(695, 106, 41, 31));
+        VF_button_F3_intro->setGeometry(QRect(745, 106, 41, 31));
         VF_button_F3_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F3_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F11_device = new QLabel(VehicleCurrentFaultPage);
@@ -340,7 +326,7 @@ public:
         VF_label_F4_starttime->setAlignment(Qt::AlignCenter);
         VF_button_F7_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F7_intro->setObjectName(QString::fromUtf8("VF_button_F7_intro"));
-        VF_button_F7_intro->setGeometry(QRect(695, 222, 41, 31));
+        VF_button_F7_intro->setGeometry(QRect(745, 222, 41, 31));
         VF_button_F7_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F7_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F9_starttime = new QLabel(VehicleCurrentFaultPage);
@@ -352,7 +338,7 @@ public:
         VF_label_F9_starttime->setAlignment(Qt::AlignCenter);
         VF_label_F1_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F1_name->setObjectName(QString::fromUtf8("VF_label_F1_name"));
-        VF_label_F1_name->setGeometry(QRect(484, 48, 211, 31));
+        VF_label_F1_name->setGeometry(QRect(484, 48, 261, 31));
         VF_label_F1_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
@@ -422,14 +408,14 @@ public:
         VF_label_F7_position->setAlignment(Qt::AlignCenter);
         VF_label_F10_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F10_name->setObjectName(QString::fromUtf8("VF_label_F10_name"));
-        VF_label_F10_name->setGeometry(QRect(484, 309, 211, 31));
+        VF_label_F10_name->setGeometry(QRect(484, 309, 261, 31));
         VF_label_F10_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         VF_label_F10_name->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         VF_label_F11_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F11_name->setObjectName(QString::fromUtf8("VF_label_F11_name"));
-        VF_label_F11_name->setGeometry(QRect(484, 338, 211, 31));
+        VF_label_F11_name->setGeometry(QRect(484, 338, 261, 31));
         VF_label_F11_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
@@ -489,7 +475,7 @@ public:
         VF_label_F11_code->setAlignment(Qt::AlignCenter);
         VF_button_F6_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F6_intro->setObjectName(QString::fromUtf8("VF_button_F6_intro"));
-        VF_button_F6_intro->setGeometry(QRect(695, 193, 41, 31));
+        VF_button_F6_intro->setGeometry(QRect(745, 193, 41, 31));
         VF_button_F6_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F6_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F9_position = new QLabel(VehicleCurrentFaultPage);
@@ -501,12 +487,12 @@ public:
         VF_label_F9_position->setAlignment(Qt::AlignCenter);
         VF_button_F8_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F8_intro->setObjectName(QString::fromUtf8("VF_button_F8_intro"));
-        VF_button_F8_intro->setGeometry(QRect(695, 251, 41, 31));
+        VF_button_F8_intro->setGeometry(QRect(745, 251, 41, 31));
         VF_button_F8_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F8_intro->setStyleSheet(QString::fromUtf8(""));
         VF_button_F2_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F2_intro->setObjectName(QString::fromUtf8("VF_button_F2_intro"));
-        VF_button_F2_intro->setGeometry(QRect(695, 77, 41, 31));
+        VF_button_F2_intro->setGeometry(QRect(745, 77, 41, 31));
         VF_button_F2_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F2_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F6_device = new QLabel(VehicleCurrentFaultPage);
@@ -533,7 +519,7 @@ public:
         VF_starttime_title->setAlignment(Qt::AlignCenter);
         VF_button_F1_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F1_intro->setObjectName(QString::fromUtf8("VF_button_F1_intro"));
-        VF_button_F1_intro->setGeometry(QRect(695, 49, 41, 31));
+        VF_button_F1_intro->setGeometry(QRect(745, 49, 41, 31));
         VF_button_F1_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F1_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F9_code = new QLabel(VehicleCurrentFaultPage);
@@ -559,7 +545,7 @@ public:
         VF_label_F10_starttime->setAlignment(Qt::AlignCenter);
         VF_name_title = new QLabel(VehicleCurrentFaultPage);
         VF_name_title->setObjectName(QString::fromUtf8("VF_name_title"));
-        VF_name_title->setGeometry(QRect(484, 9, 211, 41));
+        VF_name_title->setGeometry(QRect(484, 9, 261, 41));
         VF_name_title->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "color: rgb(0, 255, 255);\n"
 "background-color: rgb(133, 133, 133);\n"
@@ -574,14 +560,14 @@ public:
         VF_label_F5_device->setAlignment(Qt::AlignCenter);
         VF_label_F9_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F9_name->setObjectName(QString::fromUtf8("VF_label_F9_name"));
-        VF_label_F9_name->setGeometry(QRect(484, 280, 211, 31));
+        VF_label_F9_name->setGeometry(QRect(484, 280, 261, 31));
         VF_label_F9_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         VF_label_F9_name->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         VF_label_F2_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F2_name->setObjectName(QString::fromUtf8("VF_label_F2_name"));
-        VF_label_F2_name->setGeometry(QRect(484, 77, 211, 31));
+        VF_label_F2_name->setGeometry(QRect(484, 77, 261, 31));
         VF_label_F2_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
@@ -595,7 +581,7 @@ public:
         VF_label_F4_startdate->setAlignment(Qt::AlignCenter);
         VF_button_F4_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F4_intro->setObjectName(QString::fromUtf8("VF_button_F4_intro"));
-        VF_button_F4_intro->setGeometry(QRect(695, 135, 41, 31));
+        VF_button_F4_intro->setGeometry(QRect(745, 135, 41, 31));
         VF_button_F4_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F4_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F1_startdate = new QLabel(VehicleCurrentFaultPage);
@@ -623,35 +609,35 @@ public:
         VF_label_F6_code->setAlignment(Qt::AlignCenter);
         VF_label_F12_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F12_name->setObjectName(QString::fromUtf8("VF_label_F12_name"));
-        VF_label_F12_name->setGeometry(QRect(484, 367, 211, 31));
+        VF_label_F12_name->setGeometry(QRect(484, 367, 261, 31));
         VF_label_F12_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         VF_label_F12_name->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         VF_label_F8_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F8_name->setObjectName(QString::fromUtf8("VF_label_F8_name"));
-        VF_label_F8_name->setGeometry(QRect(484, 251, 211, 31));
+        VF_label_F8_name->setGeometry(QRect(484, 251, 261, 31));
         VF_label_F8_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         VF_label_F8_name->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         VF_label_F5_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F5_name->setObjectName(QString::fromUtf8("VF_label_F5_name"));
-        VF_label_F5_name->setGeometry(QRect(484, 164, 211, 31));
+        VF_label_F5_name->setGeometry(QRect(484, 164, 261, 31));
         VF_label_F5_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         VF_label_F5_name->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         VF_label_F6_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F6_name->setObjectName(QString::fromUtf8("VF_label_F6_name"));
-        VF_label_F6_name->setGeometry(QRect(484, 193, 211, 31));
+        VF_label_F6_name->setGeometry(QRect(484, 193, 261, 31));
         VF_label_F6_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         VF_label_F6_name->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         VF_button_F5_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F5_intro->setObjectName(QString::fromUtf8("VF_button_F5_intro"));
-        VF_button_F5_intro->setGeometry(QRect(695, 164, 41, 31));
+        VF_button_F5_intro->setGeometry(QRect(745, 164, 41, 31));
         VF_button_F5_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F5_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F1_device = new QLabel(VehicleCurrentFaultPage);
@@ -705,12 +691,12 @@ public:
         VF_date_title->setAlignment(Qt::AlignCenter);
         VF_button_F9_intro = new QPushButton(VehicleCurrentFaultPage);
         VF_button_F9_intro->setObjectName(QString::fromUtf8("VF_button_F9_intro"));
-        VF_button_F9_intro->setGeometry(QRect(695, 280, 41, 31));
+        VF_button_F9_intro->setGeometry(QRect(745, 280, 41, 31));
         VF_button_F9_intro->setFocusPolicy(Qt::NoFocus);
         VF_button_F9_intro->setStyleSheet(QString::fromUtf8(""));
         VF_label_F3_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F3_name->setObjectName(QString::fromUtf8("VF_label_F3_name"));
-        VF_label_F3_name->setGeometry(QRect(484, 106, 211, 31));
+        VF_label_F3_name->setGeometry(QRect(484, 106, 261, 31));
         VF_label_F3_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
@@ -724,7 +710,7 @@ public:
         VF_label_F12_position->setAlignment(Qt::AlignCenter);
         VF_intro_title = new QLabel(VehicleCurrentFaultPage);
         VF_intro_title->setObjectName(QString::fromUtf8("VF_intro_title"));
-        VF_intro_title->setGeometry(QRect(693, 9, 41, 41));
+        VF_intro_title->setGeometry(QRect(743, 9, 41, 41));
         VF_intro_title->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "color: rgb(0, 255, 255);\n"
 "background-color: rgb(133, 133, 133);\n"
@@ -746,7 +732,7 @@ public:
         VF_label_F8_code->setAlignment(Qt::AlignCenter);
         VF_label_F7_name = new QLabel(VehicleCurrentFaultPage);
         VF_label_F7_name->setObjectName(QString::fromUtf8("VF_label_F7_name"));
-        VF_label_F7_name->setGeometry(QRect(484, 222, 211, 31));
+        VF_label_F7_name->setGeometry(QRect(484, 222, 261, 31));
         VF_label_F7_name->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
@@ -801,84 +787,6 @@ public:
 "background-color: rgb(255, 255, 255);\n"
 "font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         VF_label_F9_startdate->setAlignment(Qt::AlignCenter);
-        VF_button_F1_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F1_confirm->setObjectName(QString::fromUtf8("VF_button_F1_confirm"));
-        VF_button_F1_confirm->setGeometry(QRect(734, 49, 55, 31));
-        VF_button_F1_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F1_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F8_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F8_confirm->setObjectName(QString::fromUtf8("VF_button_F8_confirm"));
-        VF_button_F8_confirm->setGeometry(QRect(734, 251, 55, 31));
-        VF_button_F8_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F8_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F10_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F10_confirm->setObjectName(QString::fromUtf8("VF_button_F10_confirm"));
-        VF_button_F10_confirm->setGeometry(QRect(734, 309, 55, 31));
-        VF_button_F10_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F10_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F11_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F11_confirm->setObjectName(QString::fromUtf8("VF_button_F11_confirm"));
-        VF_button_F11_confirm->setGeometry(QRect(734, 338, 55, 31));
-        VF_button_F11_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F11_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_intro_title_2 = new QLabel(VehicleCurrentFaultPage);
-        VF_intro_title_2->setObjectName(QString::fromUtf8("VF_intro_title_2"));
-        VF_intro_title_2->setGeometry(QRect(732, 9, 55, 41));
-        VF_intro_title_2->setStyleSheet(QString::fromUtf8("border: 2px solid color(0, 0, 0);\n"
-"color: rgb(0, 255, 255);\n"
-"background-color: rgb(133, 133, 133);\n"
-"font: 14px \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
-        VF_intro_title_2->setAlignment(Qt::AlignCenter);
-        VF_button_F9_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F9_confirm->setObjectName(QString::fromUtf8("VF_button_F9_confirm"));
-        VF_button_F9_confirm->setGeometry(QRect(734, 280, 55, 31));
-        VF_button_F9_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F9_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F2_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F2_confirm->setObjectName(QString::fromUtf8("VF_button_F2_confirm"));
-        VF_button_F2_confirm->setGeometry(QRect(734, 77, 55, 31));
-        VF_button_F2_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F2_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F7_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F7_confirm->setObjectName(QString::fromUtf8("VF_button_F7_confirm"));
-        VF_button_F7_confirm->setGeometry(QRect(734, 222, 55, 31));
-        VF_button_F7_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F7_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F12_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F12_confirm->setObjectName(QString::fromUtf8("VF_button_F12_confirm"));
-        VF_button_F12_confirm->setGeometry(QRect(734, 367, 55, 31));
-        VF_button_F12_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F12_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F3_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F3_confirm->setObjectName(QString::fromUtf8("VF_button_F3_confirm"));
-        VF_button_F3_confirm->setGeometry(QRect(734, 106, 55, 31));
-        VF_button_F3_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F3_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F4_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F4_confirm->setObjectName(QString::fromUtf8("VF_button_F4_confirm"));
-        VF_button_F4_confirm->setGeometry(QRect(734, 135, 55, 31));
-        VF_button_F4_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F4_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F5_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F5_confirm->setObjectName(QString::fromUtf8("VF_button_F5_confirm"));
-        VF_button_F5_confirm->setGeometry(QRect(734, 164, 55, 31));
-        VF_button_F5_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F5_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_F6_confirm = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_F6_confirm->setObjectName(QString::fromUtf8("VF_button_F6_confirm"));
-        VF_button_F6_confirm->setGeometry(QRect(734, 193, 55, 31));
-        VF_button_F6_confirm->setFocusPolicy(Qt::NoFocus);
-        VF_button_F6_confirm->setStyleSheet(QString::fromUtf8(""));
-        VF_button_confirmALL = new QPushButton(VehicleCurrentFaultPage);
-        VF_button_confirmALL->setObjectName(QString::fromUtf8("VF_button_confirmALL"));
-        VF_button_confirmALL->setGeometry(QRect(90, 404, 131, 31));
-        VF_button_confirmALL->setFocusPolicy(Qt::NoFocus);
-        VF_button_confirmALL->setStyleSheet(QString::fromUtf8("font: 75 18px ;\n"
-"color: rgb(255, 255, 255);\n"
-"background-color: rgb(51, 153, 255);\n"
-"border-color: rgb(216, 216, 216);\n"
-"border-radius:10px;\n"
-""));
         VehicleHistoryFaultPage_background->raise();
         VF_button_F12_intro->raise();
         VF_label_F2_starttime->raise();
@@ -975,20 +883,6 @@ public:
         VF_label_F6_startdate->raise();
         VF_label_F5_starttime->raise();
         VF_label_F9_startdate->raise();
-        VF_button_F1_confirm->raise();
-        VF_button_F8_confirm->raise();
-        VF_button_F10_confirm->raise();
-        VF_button_F11_confirm->raise();
-        VF_intro_title_2->raise();
-        VF_button_F9_confirm->raise();
-        VF_button_F2_confirm->raise();
-        VF_button_F7_confirm->raise();
-        VF_button_F12_confirm->raise();
-        VF_button_F3_confirm->raise();
-        VF_button_F4_confirm->raise();
-        VF_button_F5_confirm->raise();
-        VF_button_F6_confirm->raise();
-        VF_button_confirmALL->raise();
 
         retranslateUi(VehicleCurrentFaultPage);
 
@@ -1083,7 +977,8 @@ public:
         VF_button_F9_intro->setText(QString());
         VF_label_F3_name->setText(QString());
         VF_label_F12_position->setText(QString());
-        VF_intro_title->setText(QApplication::translate("VehicleCurrentFaultPage", "\346\217\217\350\277\260", 0, QApplication::UnicodeUTF8));
+        VF_intro_title->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\202\271\345\207\273\n"
+"\346\217\217\350\277\260", 0, QApplication::UnicodeUTF8));
         VF_label_F7_startdate->setText(QString());
         VF_label_F8_code->setText(QString());
         VF_label_F7_name->setText(QString());
@@ -1094,20 +989,6 @@ public:
         VF_label_F6_startdate->setText(QString());
         VF_label_F5_starttime->setText(QString());
         VF_label_F9_startdate->setText(QString());
-        VF_button_F1_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F8_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F10_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F11_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_intro_title_2->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F9_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F2_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F7_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F12_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F3_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F4_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F5_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_F6_confirm->setText(QApplication::translate("VehicleCurrentFaultPage", "\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
-        VF_button_confirmALL->setText(QApplication::translate("VehicleCurrentFaultPage", "\346\225\205\351\232\234\345\205\250\351\203\250\347\241\256\350\256\244", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

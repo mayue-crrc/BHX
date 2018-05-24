@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="VF_button_F12_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>367</y>
      <width>41</width>
      <height>31</height>
@@ -184,7 +184,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>135</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -245,7 +245,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F11_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>338</y>
      <width>41</width>
      <height>31</height>
@@ -285,7 +285,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F10_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>309</y>
      <width>41</width>
      <height>31</height>
@@ -370,7 +370,7 @@ padding:2px 4px;</string>
   <widget class="QPushButton" name="VF_button_F3_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>106</y>
      <width>41</width>
      <height>31</height>
@@ -620,7 +620,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F7_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>222</y>
      <width>41</width>
      <height>31</height>
@@ -662,7 +662,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>48</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -870,7 +870,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>309</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -891,7 +891,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>338</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1061,7 +1061,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F6_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>193</y>
      <width>41</width>
      <height>31</height>
@@ -1101,7 +1101,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F8_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>251</y>
      <width>41</width>
      <height>31</height>
@@ -1120,7 +1120,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F2_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>77</y>
      <width>41</width>
      <height>31</height>
@@ -1203,7 +1203,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F1_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>49</y>
      <width>41</width>
      <height>31</height>
@@ -1287,7 +1287,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>9</y>
-     <width>211</width>
+     <width>261</width>
      <height>41</height>
     </rect>
    </property>
@@ -1330,7 +1330,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>280</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1351,7 +1351,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>77</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1391,7 +1391,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F4_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>135</y>
      <width>41</width>
      <height>31</height>
@@ -1477,7 +1477,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>367</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1498,7 +1498,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>251</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1519,7 +1519,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>164</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1540,7 +1540,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>193</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1559,7 +1559,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F5_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>164</y>
      <width>41</width>
      <height>31</height>
@@ -1725,7 +1725,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QPushButton" name="VF_button_F9_intro">
    <property name="geometry">
     <rect>
-     <x>695</x>
+     <x>745</x>
      <y>280</y>
      <width>41</width>
      <height>31</height>
@@ -1746,7 +1746,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>106</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -1786,7 +1786,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
   <widget class="QLabel" name="VF_intro_title">
    <property name="geometry">
     <rect>
-     <x>693</x>
+     <x>743</x>
      <y>9</y>
      <width>41</width>
      <height>41</height>
@@ -1799,7 +1799,8 @@ background-color: rgb(133, 133, 133);
 font: 14px &quot;微软雅黑&quot;;</string>
    </property>
    <property name="text">
-    <string>描述</string>
+    <string>点击
+描述</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -1852,7 +1853,7 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <rect>
      <x>484</x>
      <y>222</y>
-     <width>211</width>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -2016,280 +2017,6 @@ font: 14px &quot;微软雅黑&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="VF_button_F1_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>49</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F8_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>251</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F10_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>309</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F11_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>338</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="VF_intro_title_2">
-   <property name="geometry">
-    <rect>
-     <x>732</x>
-     <y>9</y>
-     <width>55</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border: 2px solid color(0, 0, 0);
-color: rgb(0, 255, 255);
-background-color: rgb(133, 133, 133);
-font: 14px &quot;微软雅黑&quot;;</string>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F9_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>280</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F2_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>77</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F7_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>222</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F12_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>367</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F3_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>106</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F4_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>135</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F5_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>164</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_F6_confirm">
-   <property name="geometry">
-    <rect>
-     <x>734</x>
-     <y>193</y>
-     <width>55</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>确认</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VF_button_confirmALL">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>404</y>
-     <width>131</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 18px ;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);
-border-radius:10px;
-</string>
-   </property>
-   <property name="text">
-    <string>故障全部确认</string>
-   </property>
-  </widget>
   <zorder>VehicleHistoryFaultPage_background</zorder>
   <zorder>VF_button_F12_intro</zorder>
   <zorder>VF_label_F2_starttime</zorder>
@@ -2386,20 +2113,6 @@ border-radius:10px;
   <zorder>VF_label_F6_startdate</zorder>
   <zorder>VF_label_F5_starttime</zorder>
   <zorder>VF_label_F9_startdate</zorder>
-  <zorder>VF_button_F1_confirm</zorder>
-  <zorder>VF_button_F8_confirm</zorder>
-  <zorder>VF_button_F10_confirm</zorder>
-  <zorder>VF_button_F11_confirm</zorder>
-  <zorder>VF_intro_title_2</zorder>
-  <zorder>VF_button_F9_confirm</zorder>
-  <zorder>VF_button_F2_confirm</zorder>
-  <zorder>VF_button_F7_confirm</zorder>
-  <zorder>VF_button_F12_confirm</zorder>
-  <zorder>VF_button_F3_confirm</zorder>
-  <zorder>VF_button_F4_confirm</zorder>
-  <zorder>VF_button_F5_confirm</zorder>
-  <zorder>VF_button_F6_confirm</zorder>
-  <zorder>VF_button_confirmALL</zorder>
  </widget>
  <resources/>
  <connections/>

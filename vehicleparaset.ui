@@ -13,224 +13,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="VehicleParaSet_Button_mileset">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>40</y>
-     <width>81</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  18px;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>里程设置</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VehicleParaSet_Button_wheeldiasetconfirm">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>40</y>
-     <width>61</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  18px;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>确定</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VehicleParaSet_Button_milesetconfirm">
-   <property name="geometry">
-    <rect>
-     <x>730</x>
-     <y>40</y>
-     <width>61</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  18px;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>确定</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VehicleParaSet_Button_wheeldiaset">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>40</y>
-     <width>81</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 18px;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>轮径设置</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VehicleParaSet_Button_traincodesetconfirm">
-   <property name="geometry">
-    <rect>
-     <x>390</x>
-     <y>40</y>
-     <width>61</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  18px;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>确定</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="VehicleParaSet_Label_milevalue">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>40</y>
-     <width>181</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  24px ;
-color: rgb(255, 255, 255);
-background-color: rgb(178, 178, 178);
-border:2px solid rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="VehicleParaSet_Label_wheelvalue">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>40</y>
-     <width>71</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  24px ;
-color: rgb(255, 255, 255);
-background-color: rgb(178, 178, 178);
-border:2px solid rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="VehicleParaSet_label_4">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>10</y>
-     <width>131</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  12px ;
-color: rgb(255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string>mm(范围580~660)</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="VehicleParaSet_Button_carcodeset">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>40</y>
-     <width>81</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  18px;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>车号设置</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="VehicleParaSet_Label_VechileNum">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>40</y>
-     <width>71</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  24px ;
-color: rgb(255, 255, 255);
-background-color: rgb(178, 178, 178);
-border:2px solid rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="VehicleParaSet_background">
    <property name="geometry">
     <rect>
@@ -247,53 +29,11 @@ border:2px solid rgb(216, 216, 216);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="VehicleParaSet_Button_quitbtn">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>390</y>
-     <width>81</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  18px ;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>退出</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="VehicleParaSet_label_5">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>10</y>
-     <width>121</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  12px;
-color: rgb(255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string>(范围00~99)</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QPushButton" name="VehicleParaSet_Button_Sandforbidden">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>250</y>
+     <y>210</y>
      <width>110</width>
      <height>40</height>
     </rect>
@@ -315,7 +55,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>360</x>
-     <y>250</y>
+     <y>210</y>
      <width>131</width>
      <height>40</height>
     </rect>
@@ -337,7 +77,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>250</y>
+     <y>210</y>
      <width>110</width>
      <height>40</height>
     </rect>
@@ -355,33 +95,11 @@ border-color: rgb(216, 216, 216);</string>
     <string>紧急广播</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="VehicleParaSet_Button_forcewind">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>400</y>
-     <width>110</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::NoFocus</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75  18px;
-color: rgb(255, 255, 255);
-background-color: rgb(51, 153, 255);
-border-color: rgb(216, 216, 216);</string>
-   </property>
-   <property name="text">
-    <string>强迫泵风</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="VehicleParaSet_Button_FBRMC1">
    <property name="geometry">
     <rect>
      <x>560</x>
-     <y>250</y>
+     <y>210</y>
      <width>131</width>
      <height>40</height>
     </rect>
@@ -403,7 +121,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>140</y>
+     <y>70</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -425,7 +143,7 @@ border:2px solid rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>140</y>
+     <y>70</y>
      <width>61</width>
      <height>61</height>
     </rect>
@@ -447,7 +165,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>140</y>
+     <y>70</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -469,7 +187,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>140</y>
+     <y>70</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -491,7 +209,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>170</y>
+     <y>100</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -513,7 +231,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>170</y>
+     <y>100</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -535,7 +253,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>170</y>
+     <y>100</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -557,7 +275,7 @@ border:2px solid rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>140</y>
+     <y>70</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -577,7 +295,7 @@ color: rgb(255, 255, 0);</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>170</y>
+     <y>100</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -598,7 +316,7 @@ color: rgb(255, 255, 0);</string>
    <property name="geometry">
     <rect>
      <x>660</x>
-     <y>140</y>
+     <y>70</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -620,7 +338,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>140</y>
+     <y>70</y>
      <width>111</width>
      <height>31</height>
     </rect>
@@ -640,7 +358,7 @@ color: rgb(255, 255, 0);</string>
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>170</y>
+     <y>100</y>
      <width>111</width>
      <height>31</height>
     </rect>
@@ -660,7 +378,7 @@ color: rgb(255, 255, 0);</string>
    <property name="geometry">
     <rect>
      <x>580</x>
-     <y>170</y>
+     <y>100</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -682,7 +400,7 @@ border:2px solid rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>530</x>
-     <y>170</y>
+     <y>100</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -704,7 +422,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>710</x>
-     <y>140</y>
+     <y>70</y>
      <width>61</width>
      <height>61</height>
     </rect>
@@ -726,7 +444,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>660</x>
-     <y>170</y>
+     <y>100</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -748,7 +466,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>530</x>
-     <y>140</y>
+     <y>70</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -770,7 +488,7 @@ border-color: rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>580</x>
-     <y>140</y>
+     <y>70</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -792,7 +510,7 @@ border:2px solid rgb(216, 216, 216);</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>110</y>
+     <y>40</y>
      <width>771</width>
      <height>111</height>
     </rect>
@@ -810,7 +528,7 @@ border-color: rgb(255, 255, 0);</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>95</y>
+     <y>25</y>
      <width>151</width>
      <height>31</height>
     </rect>
@@ -827,21 +545,131 @@ color: rgb(255, 255, 0);</string>
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <zorder>VehicleParaSet_Button_forcewind</zorder>
+  <widget class="QPushButton" name="VehicleWheelset_Button_NextPage">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>400</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>下一页</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="VehicleWheelset_realaccmilelbl_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>400</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px ;
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>2/2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleWheelset_Button_PrePage">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>400</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>上一页</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VehicleWheelset_Button_return">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>400</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75  18px;
+color: rgb(255, 255, 255);
+background-color: rgb(51, 153, 255);
+border-color: rgb(216, 216, 216);</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(45, 45, 45);
+font: 75  18px ;
+color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>当日牵引能耗：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LBLTCUComsuption">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>280</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(45, 45, 45);
+font: 75  18px ;
+color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>VehicleParaSet_background</zorder>
   <zorder>VehicleParaSet_background_2</zorder>
-  <zorder>VehicleParaSet_Button_mileset</zorder>
-  <zorder>VehicleParaSet_Button_wheeldiasetconfirm</zorder>
-  <zorder>VehicleParaSet_Button_milesetconfirm</zorder>
-  <zorder>VehicleParaSet_Button_wheeldiaset</zorder>
-  <zorder>VehicleParaSet_Button_traincodesetconfirm</zorder>
-  <zorder>VehicleParaSet_Label_milevalue</zorder>
-  <zorder>VehicleParaSet_Label_wheelvalue</zorder>
-  <zorder>VehicleParaSet_label_4</zorder>
-  <zorder>VehicleParaSet_Button_carcodeset</zorder>
-  <zorder>VehicleParaSet_Label_VechileNum</zorder>
-  <zorder>VehicleParaSet_Button_quitbtn</zorder>
-  <zorder>VehicleParaSet_label_5</zorder>
   <zorder>VehicleParaSet_Button_Sandforbidden</zorder>
   <zorder>VehicleParaSet_Button_EBStop</zorder>
   <zorder>VehicleParaSet_Button_EB</zorder>
@@ -865,6 +693,12 @@ color: rgb(255, 255, 0);</string>
   <zorder>VehicleParaSet_Button_HMiCT_MonthStop1m</zorder>
   <zorder>VehicleParaSet_Label_HMiCT_MonthStop1</zorder>
   <zorder>VehicleParaSet_label_10</zorder>
+  <zorder>VehicleWheelset_Button_NextPage</zorder>
+  <zorder>VehicleWheelset_realaccmilelbl_2</zorder>
+  <zorder>VehicleWheelset_Button_PrePage</zorder>
+  <zorder>VehicleWheelset_Button_return</zorder>
+  <zorder>label</zorder>
+  <zorder>LBLTCUComsuption</zorder>
  </widget>
  <resources/>
  <connections/>

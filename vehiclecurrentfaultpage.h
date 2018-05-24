@@ -28,19 +28,6 @@ private:
     CtrlFaultdetails* FaultDetailDlg;
 
 private slots:
-    void on_VF_button_confirmALL_pressed();
-    void on_VF_button_F1_confirm_pressed();
-    void on_VF_button_F2_confirm_pressed();
-    void on_VF_button_F3_confirm_pressed();
-    void on_VF_button_F4_confirm_pressed();
-    void on_VF_button_F5_confirm_pressed();
-    void on_VF_button_F6_confirm_pressed();
-    void on_VF_button_F7_confirm_pressed();
-    void on_VF_button_F8_confirm_pressed();
-    void on_VF_button_F9_confirm_pressed();
-    void on_VF_button_F10_confirm_pressed();
-    void on_VF_button_F11_confirm_pressed();
-    void on_VF_button_F12_confirm_pressed();
     void on_VF_button_F12_intro_pressed();
     void on_VF_button_F11_intro_pressed();
     void on_VF_button_F10_intro_pressed();

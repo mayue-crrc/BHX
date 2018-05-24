@@ -15,13 +15,28 @@ CrrcFault::CrrcFault(QString faultListFilePath, QString historyFilePath)
     this->readFaultTypeListFile();
     this->readHistoryFaultFile();
     //stepfaultflg = false;
+    timer = new QTimer;
+    connect(timer, SIGNAL(timeout()),SLOT(Delay200s()));
+    timer->start(200000);
+
+    HVACtimer = new QTimer;
+    connect(HVACtimer, SIGNAL(timeout()),SLOT(Delay120s()));
+    HVACtimer->start(120000);
+    NewFaultOccur = false;
 
 }
 void CrrcFault::getLocalDateTime(QDateTime datetime)
 {
     this->m_Localdatetime = datetime;
 }
-
+void CrrcFault::Delay200s()
+{
+    timer->stop();
+}
+void CrrcFault::Delay120s()
+{
+    HVACtimer->stop();
+}
 void CrrcFault::synchronize(CrrcCan *crrcCan)
 {
     if (NULL == crrcCan)
@@ -30,6 +45,7 @@ void CrrcFault::synchronize(CrrcCan *crrcCan)
 
         return;
     }
+    bool tmp_NewFaultOccur  = false;
 
     foreach (unsigned short int key, this->faultList.keys())
     {
@@ -38,6 +54,14 @@ void CrrcFault::synchronize(CrrcCan *crrcCan)
             //not defined ports ;
         }else
         {
+            if(timer->isActive() && faultList[key].device == "PIS")
+            {
+                continue;
+            }
+            if(HVACtimer->isActive() && faultList[key].device == "HVAC")
+            {
+                continue;
+            }
             if (faultList[key].virtualValue == crrcCan->getBool(faultList[key].port, faultList[key].byte, faultList[key].bit))
             {
                if (this->checkItemExist(key) == false)
@@ -74,6 +98,7 @@ void CrrcFault::synchronize(CrrcCan *crrcCan)
 
                     // inset confirm fault list
                     this->confirmFaultList.push_front(currentFaultType);
+                    tmp_NewFaultOccur = true;
 
                     if (this->historyFaultList.size() >= _CRRC_MAX_HISTORY_FAULT_RECORD)
                     {
@@ -119,8 +144,10 @@ void CrrcFault::synchronize(CrrcCan *crrcCan)
                 this->removeItem(key);
             }
 
+            this->NewFaultOccur = tmp_NewFaultOccur;
         }
     }
+
 
 }
 

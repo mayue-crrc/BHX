@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'vehicleparaset.h'
 **
-** Created: Fri Sep 8 13:30:04 2017
+** Created: Fri May 11 08:58:07 2018
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_VehicleParaSet[] = {
        4,       // revision
        0,       // classname
        0,    0, // classinfo
-      21,   14, // methods
+      17,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,32 +32,31 @@ static const uint qt_meta_data_VehicleParaSet[] = {
 
  // slots: signature, parameters, type, tag, flags
       16,   15,   15,   15, 0x08,
-      73,   15,   15,   15, 0x08,
-     126,   15,   15,   15, 0x08,
-     179,   15,   15,   15, 0x08,
-     232,   15,   15,   15, 0x08,
-     285,   15,   15,   15, 0x08,
-     339,   15,   15,   15, 0x08,
-     390,   15,   15,   15, 0x08,
-     441,   15,   15,   15, 0x08,
-     493,   15,   15,   15, 0x08,
-     545,   15,   15,   15, 0x08,
-     588,   15,   15,   15, 0x08,
-     638,   15,   15,   15, 0x08,
-     693,   15,   15,   15, 0x08,
-     747,   15,   15,   15, 0x08,
-     790,   15,   15,   15, 0x08,
-     836,   15,   15,   15, 0x08,
-     883,   15,   15,   15, 0x08,
-     925,   15,   15,   15, 0x08,
-     974,   15,   15,   15, 0x08,
-    1016,   15,   15,   15, 0x08,
+      59,   15,   15,   15, 0x08,
+     104,   15,   15,   15, 0x08,
+     148,   15,   15,   15, 0x08,
+     205,   15,   15,   15, 0x08,
+     258,   15,   15,   15, 0x08,
+     311,   15,   15,   15, 0x08,
+     364,   15,   15,   15, 0x08,
+     417,   15,   15,   15, 0x08,
+     471,   15,   15,   15, 0x08,
+     522,   15,   15,   15, 0x08,
+     573,   15,   15,   15, 0x08,
+     625,   15,   15,   15, 0x08,
+     677,   15,   15,   15, 0x08,
+     719,   15,   15,   15, 0x08,
+     768,   15,   15,   15, 0x08,
+     810,   15,   15,   15, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_VehicleParaSet[] = {
     "VehicleParaSet\0\0"
+    "on_VehicleWheelset_Button_return_pressed()\0"
+    "on_VehicleWheelset_Button_NextPage_pressed()\0"
+    "on_VehicleWheelset_Button_PrePage_pressed()\0"
     "on_VehicleParaSet_Button_HMiCT_MonthStopSet_B1_pressed()\0"
     "on_VehicleParaSet_Button_HMiCT_MonthStop2p_pressed()\0"
     "on_VehicleParaSet_Button_HMiCT_MonthStop1p_pressed()\0"
@@ -68,13 +67,6 @@ static const char qt_meta_stringdata_VehicleParaSet[] = {
     "on_VehicleParaSet_Button_HMiCT_TempStopm_pressed()\0"
     "on_VehicleParaSet_Button_HMiCT_TempStartp_pressed()\0"
     "on_VehicleParaSet_Button_HMiCT_TempStartm_pressed()\0"
-    "on_VehicleParaSet_Button_quitbtn_pressed()\0"
-    "on_VehicleParaSet_Button_milesetconfirm_pressed()\0"
-    "on_VehicleParaSet_Button_traincodesetconfirm_pressed()\0"
-    "on_VehicleParaSet_Button_wheeldiasetconfirm_pressed()\0"
-    "on_VehicleParaSet_Button_mileset_pressed()\0"
-    "on_VehicleParaSet_Button_carcodeset_pressed()\0"
-    "on_VehicleParaSet_Button_wheeldiaset_pressed()\0"
     "on_VehicleParaSet_Button_FBRMC1_pressed()\0"
     "on_VehicleParaSet_Button_Sandforbidden_pressed()\0"
     "on_VehicleParaSet_Button_EBStop_pressed()\0"
@@ -110,30 +102,26 @@ int VehicleParaSet::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_VehicleParaSet_Button_HMiCT_MonthStopSet_B1_pressed(); break;
-        case 1: on_VehicleParaSet_Button_HMiCT_MonthStop2p_pressed(); break;
-        case 2: on_VehicleParaSet_Button_HMiCT_MonthStop1p_pressed(); break;
-        case 3: on_VehicleParaSet_Button_HMiCT_MonthStop2m_pressed(); break;
-        case 4: on_VehicleParaSet_Button_HMiCT_MonthStop1m_pressed(); break;
-        case 5: on_VehicleParaSet_Button_HMiCT_TempStartset_pressed(); break;
-        case 6: on_VehicleParaSet_Button_HMiCT_TempStopp_pressed(); break;
-        case 7: on_VehicleParaSet_Button_HMiCT_TempStopm_pressed(); break;
-        case 8: on_VehicleParaSet_Button_HMiCT_TempStartp_pressed(); break;
-        case 9: on_VehicleParaSet_Button_HMiCT_TempStartm_pressed(); break;
-        case 10: on_VehicleParaSet_Button_quitbtn_pressed(); break;
-        case 11: on_VehicleParaSet_Button_milesetconfirm_pressed(); break;
-        case 12: on_VehicleParaSet_Button_traincodesetconfirm_pressed(); break;
-        case 13: on_VehicleParaSet_Button_wheeldiasetconfirm_pressed(); break;
-        case 14: on_VehicleParaSet_Button_mileset_pressed(); break;
-        case 15: on_VehicleParaSet_Button_carcodeset_pressed(); break;
-        case 16: on_VehicleParaSet_Button_wheeldiaset_pressed(); break;
-        case 17: on_VehicleParaSet_Button_FBRMC1_pressed(); break;
-        case 18: on_VehicleParaSet_Button_Sandforbidden_pressed(); break;
-        case 19: on_VehicleParaSet_Button_EBStop_pressed(); break;
-        case 20: on_VehicleParaSet_Button_EB_pressed(); break;
+        case 0: on_VehicleWheelset_Button_return_pressed(); break;
+        case 1: on_VehicleWheelset_Button_NextPage_pressed(); break;
+        case 2: on_VehicleWheelset_Button_PrePage_pressed(); break;
+        case 3: on_VehicleParaSet_Button_HMiCT_MonthStopSet_B1_pressed(); break;
+        case 4: on_VehicleParaSet_Button_HMiCT_MonthStop2p_pressed(); break;
+        case 5: on_VehicleParaSet_Button_HMiCT_MonthStop1p_pressed(); break;
+        case 6: on_VehicleParaSet_Button_HMiCT_MonthStop2m_pressed(); break;
+        case 7: on_VehicleParaSet_Button_HMiCT_MonthStop1m_pressed(); break;
+        case 8: on_VehicleParaSet_Button_HMiCT_TempStartset_pressed(); break;
+        case 9: on_VehicleParaSet_Button_HMiCT_TempStopp_pressed(); break;
+        case 10: on_VehicleParaSet_Button_HMiCT_TempStopm_pressed(); break;
+        case 11: on_VehicleParaSet_Button_HMiCT_TempStartp_pressed(); break;
+        case 12: on_VehicleParaSet_Button_HMiCT_TempStartm_pressed(); break;
+        case 13: on_VehicleParaSet_Button_FBRMC1_pressed(); break;
+        case 14: on_VehicleParaSet_Button_Sandforbidden_pressed(); break;
+        case 15: on_VehicleParaSet_Button_EBStop_pressed(); break;
+        case 16: on_VehicleParaSet_Button_EB_pressed(); break;
         default: ;
         }
-        _id -= 21;
+        _id -= 17;
     }
     return _id;
 }

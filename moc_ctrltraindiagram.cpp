@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'ctrltraindiagram.h'
 **
-** Created: Tue Jul 18 10:34:20 2017
+** Created: Sat Oct 14 09:27:36 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

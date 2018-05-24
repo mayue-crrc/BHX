@@ -49,6 +49,7 @@ class VehicleCurrentFaultPage;
 class VehicleFactoryTestPage;
 class VehicleFactoryTestPage2;
 class CtrlAlarmBarH;
+class VehicleWheelSetPage;
 
 class MainWidget : public QWidget
 {
@@ -97,6 +98,7 @@ public:
     VehicleCurrentFaultPage* vehicleCurrentFaultPage;
     VehicleFactoryTestPage* vehicleFactoryTestPage;
     VehicleFactoryTestPage2* vehicleFactoryTestPage2;
+    VehicleWheelSetPage* vehicleWheelSetPage;
 
     void VCUtime2HMI10s();
     int count10stimer;

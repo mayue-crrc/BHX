@@ -11,7 +11,9 @@ public:
     void updateDatabse(CrrcCan *crrcCan);
     MainGetDefaultPara* mydefaultpara;
     // default para
-    int HMIPosition,DefaultWheelValue,DefaultTrainCode;
+    int HMIPosition,DefaultTrainCode,DefaultStarttemp,DefaultStoptemp,DefaultStartmonth,DefaultStopmonth,
+        DefaultWheel1_TP1Value,DefaultWheel2_TP1Value,DefaultWheel3_TP1Value,DefaultWheel4_TP1Value,
+        DefaultWheel1_TP2Value,DefaultWheel2_TP2Value,DefaultWheel3_TP2Value,DefaultWheel4_TP2Value;
 public:
     // public port
     unsigned char VCUtoALL_year,VCUtoALL_month,VCUtoALL_day,VCUtoALL_hour,VCUtoALL_minute,VCUtoALL_second,VCUtoALL_codeHigh,VCUtoALL_codeLow;
@@ -134,8 +136,11 @@ public:
 
 
     //   VCU->HMI
-    unsigned char VCU1_Version,VCU2_Version,VCU1_Lifesignal,VCU2_Lifesignal,VCU1_Lifesignalold,VCU2_Lifesignalold;
-    bool CANopenStatus_VCU1,CANopenStatus_VCU2,CANopenStatus_BCU1,CANopenStatus_BCU2,
+    unsigned char VCU1_Version,VCU2_Version,VCU1_Lifesignal,VCU2_Lifesignal,VCU1_Lifesignalold,VCU2_Lifesignalold,
+             CTiHM_Wheel1_TP1_U8, CTiHM_Wheel2_TP1_U8, CTiHM_Wheel3_TP1_U8, CTiHM_Wheel4_TP1_U8
+            ,CTiHM_Wheel1_TP2_U8,CTiHM_Wheel2_TP2_U8,CTiHM_Wheel3_TP2_U8,CTiHM_Wheel4_TP2_U8;
+
+    bool CANopenStatus_ATC1,CANopenStatus_ATC2,CANopenStatus_VCU1,CANopenStatus_VCU2,CANopenStatus_BCU1,CANopenStatus_BCU2,
          CANopenStatus_RIOM1,CANopenStatus_RIOM2,CANopenStatus_RIOM3,CANopenStatus_RIOM4,
          CANopenStatus_TCU1,CANopenStatus_TCU2,CANopenStatus_TCU3,CANopenStatus_TCU4
         ,CANopenStatus_BCC1,CANopenStatus_BCC2,CANopenStatus_BCC3,CANopenStatus_BCC4
@@ -151,13 +156,18 @@ public:
         ,DirectionLose,TractionBrakeClash,PassengerRoomHeat1,PassengerRoomHeat2,PassengerRoomHeat3,PassengerRoomHeat4,LoadError,ControllerCodeError;
 
     unsigned char wR2Word4_Speed,wR3Word4_Speed_limitation,wR3Word3_battery_voltage,wR3Word4_deadman_counter,ERM1_PLC_version,ERM2_PLC_version;
-    int wR3Word2_net_voltage,wR2Word2_Distance_high,wR2Word3_Distance_low,wR4Word3_net_current;
+    int wR3Word2_net_voltage,wR4Word4_net_voltage,wR2Word2_Distance_high,wR2Word3_Distance_low,wR4Word3_net_current;
     signed char Master_controller_level;
-    unsigned int wR3Word3_wdiDistance,wR3Word3_wdiDistanceMW;
+    unsigned int wR3Word3_wdiDistance,wR3Word3_wdiDistanceMW,TCUComsuption_U16;
 
     //   HMI->VCU 0X195/6-0X495/6 0x5fc 0x5f6
     int HMILifesignal1,HMIVision1,HMILifesignal2,HMIVision2,HMILifesignal,HMiCT_TrainNum_U8,HMiCT_DistanceSet_LW_U16,HMiCT_DistanceSet_HW_U16;
-    unsigned char HMItoVCU_wheelvalue,HMiCT_Year_U8,HMiCT_Month_U8,HMiCT_Day_U8,HMiCT_Hour_U8,HMiCT_Minute_U8,HMiCT_Second_U8,HMiCT_TempStart_U8,HMiCT_MonthStop_U8;
+    unsigned char HMItoVCU_wheelvalue,HMiCT_Year_U8,HMiCT_Month_U8,HMiCT_Day_U8,HMiCT_Hour_U8,HMiCT_Minute_U8,HMiCT_Second_U8,
+                HMiCT_TempStart_U8,HMiCT_MonthStop_U8
+                ,HMiCT_Wheel1_TP1_U8,HMiCT_Wheel2_TP1_U8,HMiCT_Wheel3_TP1_U8,HMiCT_Wheel4_TP1_U8,
+                HMiCT_Wheel1_TP2_U8,HMiCT_Wheel2_TP2_U8,HMiCT_Wheel3_TP2_U8,HMiCT_Wheel4_TP2_U8;
+
+
     bool HMItoVCUfactroytest,HMiCT_IsolateMc1_B1,HMiCT_IsolateM1_B1,HMiCT_IsolateM2_B1,HMiCT_IsolateMc2_B1,
         HMiCT_MC1MSR1Enable_B1,HMiCT_MC1MSR2Enable_B1,HMiCT_M1MSR1Enable_B1,HMiCT_M1MSR2Enable_B1,
         HMiCT_M2MSR1Enable_B1,HMiCT_M2MSR2Enable_B1,HMiCT_MC2MSR1Enable_B1,HMiCT_MC2MSR2Enable_B1,
@@ -270,7 +280,7 @@ public:
         ,TR1_1CT_MainContactor1ClosedM1_B1 ,TR1_1CT_Motor1SlideM1_B1,TR1_1CT_Motor1SlipM1_B1,TR1_1CT_CoolingFanOKM1_B1;
     unsigned char TR1_1CT_SlipFreqM1_U8,TR1_1CT_StatorFreqM1_U8 ,TR1_1CT_LifeSignalM1_U8,TR1_1CT_SWVersionM1_U8,TR1_1CT_OutputFreqM1_U8;
     int TR1_1CT_DynaCurrM1_U16,TR1_1CT_OutputVoltM1_U16,TR1_1CT_NetVoltM1_U16,TR1_1CT_NetCurrM1_U16,TR1_1CT_Status3M1_U16,TR1_1CT_Status4M1_U16;
-    unsigned char TR1_1CT_MotorTemp_U8;
+    signed int TR1_1CT_MotorTemp_I16;
     unsigned int TR1_1CT_MotorSpeed_U16;
 
     bool TR1_2CT_SafBrM1_B1,TR1_2CT_EnTractionM1_B1,TR1_2CT_AllBrReleasedM1_B1,TR1_2CT_BrOvertakeM1_B1,TR1_2CT_ForcedBrM1_B1
@@ -279,7 +289,7 @@ public:
         ,TR1_2CT_MainContactor1ClosedM1_B1 ,TR1_2CT_Motor1SlideM1_B1,TR1_2CT_Motor1SlipM1_B1,TR1_2CT_CoolingFanOKM1_B1;
     unsigned char TR1_2CT_SlipFreqM1_U8,TR1_2CT_StatorFreqM1_U8 ,TR1_2CT_LifeSignalM1_U8,TR1_2CT_SWVersionM1_U8,TR1_2CT_OutputFreqM1_U8;
     int TR1_2CT_DynaCurrM1_U16,TR1_2CT_OutputVoltM1_U16,TR1_2CT_NetVoltM1_U16,TR1_2CT_NetCurrM1_U16,TR1_2CT_Status3M1_U16,TR1_2CT_Status4M1_U16;
-    unsigned char TR1_2CT_MotorTemp_U8;
+    signed int TR1_2CT_MotorTemp_I16;
     unsigned int TR1_2CT_MotorSpeed_U16;
 
 
@@ -290,7 +300,7 @@ public:
         ,TR2_1CT_MainContactor1ClosedM1_B1 ,TR2_1CT_Motor1SlideM1_B1,TR2_1CT_Motor1SlipM1_B1,TR2_1CT_CoolingFanOKM1_B1;
     unsigned char TR2_1CT_SlipFreqM1_U8,TR2_1CT_StatorFreqM1_U8 ,TR2_1CT_LifeSignalM1_U8,TR2_1CT_SWVersionM1_U8,TR2_1CT_OutputFreqM1_U8;
     int TR2_1CT_DynaCurrM1_U16,TR2_1CT_OutputVoltM1_U16,TR2_1CT_NetVoltM1_U16,TR2_1CT_NetCurrM1_U16,TR2_1CT_Status3M1_U16,TR2_1CT_Status4M1_U16;
-    unsigned char TR2_1CT_MotorTemp_U8;
+    signed int TR2_1CT_MotorTemp_I16;
     unsigned int TR2_1CT_MotorSpeed_U16;
 
     bool TR2_2CT_SafBrM1_B1,TR2_2CT_EnTractionM1_B1,TR2_2CT_AllBrReleasedM1_B1,TR2_2CT_BrOvertakeM1_B1,TR2_2CT_ForcedBrM1_B1
@@ -299,7 +309,7 @@ public:
         ,TR2_2CT_MainContactor1ClosedM1_B1 ,TR2_2CT_Motor1SlideM1_B1,TR2_2CT_Motor1SlipM1_B1,TR2_2CT_CoolingFanOKM1_B1;
     unsigned char TR2_2CT_SlipFreqM1_U8,TR2_2CT_StatorFreqM1_U8 ,TR2_2CT_LifeSignalM1_U8,TR2_2CT_SWVersionM1_U8,TR2_2CT_OutputFreqM1_U8;
     int TR2_2CT_DynaCurrM1_U16,TR2_2CT_OutputVoltM1_U16,TR2_2CT_NetVoltM1_U16,TR2_2CT_NetCurrM1_U16,TR2_2CT_Status3M1_U16,TR2_2CT_Status4M1_U16;
-    unsigned char TR2_2CT_MotorTemp_U8;
+    signed int TR2_2CT_MotorTemp_I16;
     unsigned int TR2_2CT_MotorSpeed_U16;
 
     //M2-1/2 0X18d-0X48d 0X1Ed 0X2ed
@@ -309,7 +319,7 @@ public:
         ,TR3_1CT_MainContactor1ClosedM1_B1 ,TR3_1CT_Motor1SlideM1_B1,TR3_1CT_Motor1SlipM1_B1,TR3_1CT_CoolingFanOKM1_B1;
     unsigned char TR3_1CT_SlipFreqM1_U8,TR3_1CT_StatorFreqM1_U8 ,TR3_1CT_LifeSignalM1_U8,TR3_1CT_SWVersionM1_U8,TR3_1CT_OutputFreqM1_U8;
     int TR3_1CT_DynaCurrM1_U16,TR3_1CT_OutputVoltM1_U16,TR3_1CT_NetVoltM1_U16,TR3_1CT_NetCurrM1_U16,TR3_1CT_Status3M1_U16,TR3_1CT_Status4M1_U16;
-    unsigned char TR3_1CT_MotorTemp_U8;
+    signed int TR3_1CT_MotorTemp_I16;
     unsigned int TR3_1CT_MotorSpeed_U16;
 
 
@@ -319,7 +329,7 @@ public:
         ,TR3_2CT_MainContactor1ClosedM1_B1 ,TR3_2CT_Motor1SlideM1_B1,TR3_2CT_Motor1SlipM1_B1,TR3_2CT_CoolingFanOKM1_B1;
     unsigned char TR3_2CT_SlipFreqM1_U8,TR3_2CT_StatorFreqM1_U8 ,TR3_2CT_LifeSignalM1_U8,TR3_2CT_SWVersionM1_U8,TR3_2CT_OutputFreqM1_U8;
     int TR3_2CT_DynaCurrM1_U16,TR3_2CT_OutputVoltM1_U16,TR3_2CT_NetVoltM1_U16,TR3_2CT_NetCurrM1_U16,TR3_2CT_Status3M1_U16,TR3_2CT_Status4M1_U16;
-    unsigned char TR3_2CT_MotorTemp_U8;
+    signed int TR3_2CT_MotorTemp_I16;
     unsigned int TR3_2CT_MotorSpeed_U16;
 
     //MC2-1/2 0X18E-0X48E 0X1EE 0X2eE
@@ -329,7 +339,7 @@ public:
         ,TR4_1CT_MainContactor1ClosedM1_B1 ,TR4_1CT_Motor1SlideM1_B1,TR4_1CT_Motor1SlipM1_B1,TR4_1CT_CoolingFanOKM1_B1;
     unsigned char TR4_1CT_SlipFreqM1_U8,TR4_1CT_StatorFreqM1_U8 ,TR4_1CT_LifeSignalM1_U8,TR4_1CT_SWVersionM1_U8,TR4_1CT_OutputFreqM1_U8;
     int TR4_1CT_DynaCurrM1_U16,TR4_1CT_OutputVoltM1_U16,TR4_1CT_NetVoltM1_U16,TR4_1CT_NetCurrM1_U16,TR4_1CT_Status3M1_U16,TR4_1CT_Status4M1_U16;
-    unsigned char TR4_1CT_MotorTemp_U8;
+    signed int TR4_1CT_MotorTemp_I16;
     unsigned int TR4_1CT_MotorSpeed_U16;
 
 
@@ -339,7 +349,7 @@ public:
         ,TR4_2CT_MainContactor1ClosedM1_B1 ,TR4_2CT_Motor1SlideM1_B1,TR4_2CT_Motor1SlipM1_B1,TR4_2CT_CoolingFanOKM1_B1;
     unsigned char TR4_2CT_SlipFreqM1_U8,TR4_2CT_StatorFreqM1_U8 ,TR4_2CT_LifeSignalM1_U8,TR4_2CT_SWVersionM1_U8,TR4_2CT_OutputFreqM1_U8;
     int TR4_2CT_DynaCurrM1_U16,TR4_2CT_OutputVoltM1_U16,TR4_2CT_NetVoltM1_U16,TR4_2CT_NetCurrM1_U16,TR4_2CT_Status3M1_U16,TR4_2CT_Status4M1_U16;
-    unsigned char TR4_2CT_MotorTemp_U8;
+    signed int TR4_2CT_MotorTemp_I16;
     unsigned int TR4_2CT_MotorSpeed_U16;
 
     //VCU->TCU 0X20B-0X20E

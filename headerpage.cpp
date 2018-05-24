@@ -25,28 +25,33 @@ void HeaderPage::updatePage()
 
     ui->headerlabel_Date->setText(this->database->HMI_DateTime_foruse.date().toString("yyyy-MM-dd"));
     ui->headerlabel_Time->setText(this->database->HMI_DateTime_foruse.time().toString("hh:mm:ss"));
-    ui->headerlabel_Voltage->setText(QString::number(this->database->wR3Word2_net_voltage)+" V");
-    ui->headerlabel_Current->setText(QString::number(this->database->wR4Word3_net_current)+" A");
-    ui->headerlabel_24VVoltage->setText(QString::number(this->database->wR3Word3_battery_voltage)+" V");
+    ui->headerlabel_Voltage->setText(QString::number(this->database->wR3Word2_net_voltage)+"V");
+    ui->headerlabel_Voltage_MC2->setText(QString::number(this->database->wR4Word4_net_voltage)+"V");
+
+    ui->headerlabel_Current->setText(QString::number(this->database->wR4Word3_net_current)+"A");
+    ui->headerlabel_24VVoltage->setText(QString::number(this->database->wR3Word3_battery_voltage)+"V");
     ui->headerlabel_speed->setText(QString::number(this->database->wR2Word4_Speed)+"Km/h");
     if(this->database->wR3Word4_Speed_limitation == 0)
     {
         ui->headerlabel_limitspeed->setText("停车");
-        ui->headerlabel_limitspeed->setStyleSheet("font: 75  18px ;color: rgb(255, 255, 255);background-color: rgb(115, 115, 115)");
+        ui->headerlabel_limitspeed->setStyleSheet("font: 75  16px ;color: rgb(255, 255, 255);background-color: rgb(115, 115, 115)");
 
     }else
     {
         ui->headerlabel_limitspeed->setText(QString::number(this->database->wR3Word4_Speed_limitation)+"Km/h");
-        ui->headerlabel_limitspeed->setStyleSheet("font: 75  18px ;color: rgb(255, 255, 0);background-color: rgb(115, 115, 115)");
+        ui->headerlabel_limitspeed->setStyleSheet("font: 75  16px ;color: rgb(255, 255, 0);background-color: rgb(115, 115, 115)");
 
     }
 
+
+    QString tmp_code;
+    tmp_code.sprintf("%02d",database->VCUtoALL_codeHigh*256+database->VCUtoALL_codeLow);
     if(this->database->HMIPosition == 1)
     {
-        ui->headerlabel_Positon->setText("本车MC1");
+        ui->headerlabel_Positon->setText("本车"+tmp_code+"-MC1");
     }else if(this->database->HMIPosition == 2)
     {
-        ui->headerlabel_Positon->setText("本车MC2");
+        ui->headerlabel_Positon->setText("本车"+tmp_code+"-MC2");
     }else
     {
         ui->headerlabel_Positon->setText("");
@@ -122,14 +127,22 @@ void HeaderPage::updatePage()
         break;
     }
 
-    if(m_crrcfault->getConfirmFaultListSize() > 0)
+//    if(m_crrcfault->getConfirmFaultListSize() > 0)
+//    {
+//        ui->CurrentFaultBtn->show();
+
+//    }else
+//    {
+//        ui->CurrentFaultBtn->hide();
+//    }
+
+    if(m_crrcfault->getCurrentFaultListSize() > 0)
     {
         ui->CurrentFaultBtn->show();
 
     }else
     {
         ui->CurrentFaultBtn->hide();
-
     }
 }
 void HeaderPage::showEvent(QShowEvent *e)

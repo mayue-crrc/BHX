@@ -78,7 +78,7 @@ void VehicleParaSetting::on_VParaSetting_Button_datetimeset_pressed()
 
 void VehicleParaSetting::on_VParaSetting_Button_parasetting_pressed()
 {
-    changePage(uVehicleParaSetPage);
+    changePage(uVehicleWheelSetPage);
 }
 
 void VehicleParaSetting::on_VParaSetting_Button_HistoryFault_pressed()

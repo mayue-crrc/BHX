@@ -5,11 +5,32 @@ Database::Database()
 {
     mydefaultpara = new MainGetDefaultPara();
     HMIPosition = mydefaultpara->getInt("/Position/HMI");
-    DefaultWheelValue = mydefaultpara->getInt("/Wheel/Wheel");
-    DefaultTrainCode = mydefaultpara->getInt("/TrainCode/Code");
+    DefaultWheel1_TP1Value = mydefaultpara->getInt("/Wheel/Wheel1_TP1");
+    DefaultWheel2_TP1Value = mydefaultpara->getInt("/Wheel/Wheel2_TP1");
+    DefaultWheel3_TP1Value = mydefaultpara->getInt("/Wheel/Wheel3_TP1");
+    DefaultWheel4_TP1Value = mydefaultpara->getInt("/Wheel/Wheel4_TP1");
+    DefaultWheel1_TP2Value = mydefaultpara->getInt("/Wheel/Wheel1_TP2");
+    DefaultWheel2_TP2Value = mydefaultpara->getInt("/Wheel/Wheel2_TP2");
+    DefaultWheel3_TP2Value = mydefaultpara->getInt("/Wheel/Wheel3_TP2");
+    DefaultWheel4_TP2Value = mydefaultpara->getInt("/Wheel/Wheel4_TP2");
 
-    HMiCT_TrainNum_U8 = 0;//DefaultTrainCode;
-    HMItoVCU_wheelvalue = 0;//DefaultWheelValue;
+    DefaultTrainCode = mydefaultpara->getInt("/TrainCode/Code");
+    DefaultStarttemp = mydefaultpara->getInt("/Temperature/starttemperature");
+    DefaultStoptemp = mydefaultpara->getInt("/Temperature/stoptemperature");
+    DefaultStartmonth = mydefaultpara->getInt("/Month/startmonth");
+    DefaultStopmonth = mydefaultpara->getInt("/Month/stopmonth");
+
+
+    HMiCT_TrainNum_U8 = DefaultTrainCode;//DefaultTrainCode;
+    HMiCT_Wheel1_TP1_U8 = DefaultWheel1_TP1Value;
+    HMiCT_Wheel2_TP1_U8 = DefaultWheel2_TP1Value;
+    HMiCT_Wheel3_TP1_U8 = DefaultWheel3_TP1Value;
+    HMiCT_Wheel4_TP1_U8 = DefaultWheel4_TP1Value;
+    HMiCT_Wheel1_TP2_U8 = DefaultWheel1_TP2Value;
+    HMiCT_Wheel2_TP2_U8 = DefaultWheel2_TP2Value;
+    HMiCT_Wheel3_TP2_U8 = DefaultWheel3_TP2Value;
+    HMiCT_Wheel4_TP2_U8 = DefaultWheel4_TP2Value;
+
     this->HMI_15minscnt = 0;
     this->HMI_StopHVACtest_B1 = false;
     this->HMILifesignal = 0;
@@ -116,7 +137,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
     {
         HMILifesignal = 0;
     }
-    int HMIVision = 20;//VISION
+    int HMIVision = 30;//VISION
 
     //  judge online 1.65s period
 
@@ -252,6 +273,8 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->CANopenStatus_BCC4 = crrcCan->getBool(0x415,7,3);
         this->VCU1_Master = crrcCan->getBool(0x215,7,0);
         this->VCU2_Master = crrcCan->getBool(0x215,7,1);
+        this->CANopenStatus_ATC1 = crrcCan->getBool(0x41b,0,0);
+        this->CANopenStatus_ATC2 = crrcCan->getBool(0x41b,0,1);
 
         HMIVision2 = crrcCan->getUnsignedChar(0x196,1);//other side vision
         HMILifesignal2 = crrcCan->getUnsignedChar(0x196,0);
@@ -270,6 +293,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->wR2Word4_Speed = crrcCan->getUnsignedChar(0x315,6);
         this->wR3Word4_Speed_limitation = crrcCan->getUnsignedChar(0x315,7);
         this->wR3Word2_net_voltage = crrcCan->getUnsignedInt(0x415,2);
+        this->wR4Word4_net_voltage = crrcCan->getUnsignedInt(0x515,6);
         this->wR3Word3_battery_voltage = crrcCan->getUnsignedChar(0x415,4);
         this->wR4Word3_net_current = crrcCan->getUnsignedInt(0x515,4);     //change to 0x515 w3
         this->wR3Word4_deadman_counter = crrcCan->getUnsignedChar(0x415,6);
@@ -282,7 +306,18 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->MC1_Key_active = crrcCan->getBool(0x215,7,2);
         this->MC2_Key_active = crrcCan->getBool(0x215,7,3);
         this->wR3Word3_wdiDistance = crrcCan->getUnsignedInt(0x515,2);
-        this->wR3Word3_wdiDistanceMW = crrcCan->getUnsignedInt(0x515,6);
+        //this->wR3Word3_wdiDistanceMW = crrcCan->getUnsignedInt(0x515,6);
+
+        this->CTiHM_Wheel1_TP1_U8 = crrcCan->getUnsignedChar(0x21b,0);
+        this->CTiHM_Wheel2_TP1_U8 = crrcCan->getUnsignedChar(0x21b,1);
+        this->CTiHM_Wheel3_TP1_U8 = crrcCan->getUnsignedChar(0x21b,2);
+        this->CTiHM_Wheel4_TP1_U8 = crrcCan->getUnsignedChar(0x21b,3);
+        this->CTiHM_Wheel1_TP2_U8 = crrcCan->getUnsignedChar(0x21b,4);
+        this->CTiHM_Wheel2_TP2_U8 = crrcCan->getUnsignedChar(0x21b,5);
+        this->CTiHM_Wheel3_TP2_U8 = crrcCan->getUnsignedChar(0x21b,6);
+        this->CTiHM_Wheel4_TP2_U8 = crrcCan->getUnsignedChar(0x21b,7);
+
+        this->TCUComsuption_U16 = crrcCan->getUnsignedInt(0x41b,2);
 
         ///HMI->VCU
         HMIVision1 = HMIVision;
@@ -435,6 +470,14 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         crrcCan->setBool(0x19b,7,5,HMiCT_FactoryTest_M2DO1_9);
         crrcCan->setBool(0x19b,7,6,HMiCT_FactoryTest_M2DO1_10);
 
+        crrcCan->setUnsignedChar(0x39b,0,HMiCT_Wheel1_TP1_U8);
+        crrcCan->setUnsignedChar(0x39b,1,HMiCT_Wheel2_TP1_U8);
+        crrcCan->setUnsignedChar(0x39b,2,HMiCT_Wheel3_TP1_U8);
+        crrcCan->setUnsignedChar(0x39b,3,HMiCT_Wheel4_TP1_U8);
+        crrcCan->setUnsignedChar(0x39b,4,HMiCT_Wheel1_TP2_U8);
+        crrcCan->setUnsignedChar(0x39b,5,HMiCT_Wheel2_TP2_U8);
+        crrcCan->setUnsignedChar(0x39b,6,HMiCT_Wheel3_TP2_U8);
+        crrcCan->setUnsignedChar(0x39b,7,HMiCT_Wheel4_TP2_U8);
 
     }else if(this->HMIPosition == 2)
     {
@@ -494,6 +537,8 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->CANopenStatus_BCC4 = crrcCan->getBool(0x416,7,3);
         this->VCU1_Master = crrcCan->getBool(0x216,7,0);
         this->VCU2_Master = crrcCan->getBool(0x216,7,1);
+        this->CANopenStatus_ATC1 = crrcCan->getBool(0x51b,0,0);
+        this->CANopenStatus_ATC2 = crrcCan->getBool(0x51b,0,1);
 
         HMIVision1 = crrcCan->getUnsignedChar(0x195,1);//other side vision
         HMILifesignal1 = crrcCan->getUnsignedChar(0x195,0);
@@ -513,6 +558,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->wR2Word4_Speed = crrcCan->getUnsignedChar(0x316,6);
         this->wR3Word4_Speed_limitation = crrcCan->getUnsignedChar(0x316,7);
         this->wR3Word2_net_voltage = crrcCan->getUnsignedInt(0x416,2);
+        this->wR4Word4_net_voltage = crrcCan->getUnsignedInt(0x516,6);
         this->wR3Word3_battery_voltage = crrcCan->getUnsignedChar(0x416,4);
         this->wR4Word3_net_current = crrcCan->getUnsignedInt(0x516,4);     //change to 0x515 w3
         this->wR3Word4_deadman_counter = crrcCan->getUnsignedChar(0x416,6);
@@ -525,7 +571,18 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->MC1_Key_active = crrcCan->getBool(0x216,7,2);
         this->MC2_Key_active = crrcCan->getBool(0x216,7,3);
         this->wR3Word3_wdiDistance = crrcCan->getUnsignedInt(0x516,2);
-        this->wR3Word3_wdiDistanceMW = crrcCan->getUnsignedInt(0x516,6);
+        //this->wR3Word3_wdiDistanceMW = crrcCan->getUnsignedInt(0x516,6);
+
+        this->CTiHM_Wheel1_TP1_U8 = crrcCan->getUnsignedChar(0x31b,0);
+        this->CTiHM_Wheel2_TP1_U8 = crrcCan->getUnsignedChar(0x31b,1);
+        this->CTiHM_Wheel3_TP1_U8 = crrcCan->getUnsignedChar(0x31b,2);
+        this->CTiHM_Wheel4_TP1_U8 = crrcCan->getUnsignedChar(0x31b,3);
+        this->CTiHM_Wheel1_TP2_U8 = crrcCan->getUnsignedChar(0x31b,4);
+        this->CTiHM_Wheel2_TP2_U8 = crrcCan->getUnsignedChar(0x31b,5);
+        this->CTiHM_Wheel3_TP2_U8 = crrcCan->getUnsignedChar(0x31b,6);
+        this->CTiHM_Wheel4_TP2_U8 = crrcCan->getUnsignedChar(0x31b,7);
+
+        this->TCUComsuption_U16 = crrcCan->getUnsignedInt(0x51b,2);
 
 
         ///HMI2->VCU
@@ -678,6 +735,15 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         crrcCan->setBool(0x29b,7,5,HMiCT_FactoryTest_M2DO1_9);
         crrcCan->setBool(0x29b,7,6,HMiCT_FactoryTest_M2DO1_10);
 
+
+        crrcCan->setUnsignedChar(0x49b,0,HMiCT_Wheel1_TP1_U8);
+        crrcCan->setUnsignedChar(0x49b,1,HMiCT_Wheel2_TP1_U8);
+        crrcCan->setUnsignedChar(0x49b,2,HMiCT_Wheel3_TP1_U8);
+        crrcCan->setUnsignedChar(0x49b,3,HMiCT_Wheel4_TP1_U8);
+        crrcCan->setUnsignedChar(0x49b,4,HMiCT_Wheel1_TP2_U8);
+        crrcCan->setUnsignedChar(0x49b,5,HMiCT_Wheel2_TP2_U8);
+        crrcCan->setUnsignedChar(0x49b,6,HMiCT_Wheel3_TP2_U8);
+        crrcCan->setUnsignedChar(0x49b,7,HMiCT_Wheel4_TP2_U8);
     }else
     {
         //todo clean alldata??
@@ -692,8 +758,8 @@ void Database::updateDatabse(CrrcCan *crrcCan)
     this->VCUtoALL_hour = crrcCan->getUnsignedChar(0x203,3);
     this->VCUtoALL_minute = crrcCan->getUnsignedChar(0x203,4);
     this->VCUtoALL_second = crrcCan->getUnsignedChar(0x203,5);
-    this->VCUtoALL_codeHigh = crrcCan->getUnsignedChar(0x203,6);
-    this->VCUtoALL_codeLow = crrcCan->getUnsignedChar(0x203,7);
+    this->VCUtoALL_codeHigh = crrcCan->getUnsignedChar(0x203,7);
+    this->VCUtoALL_codeLow = crrcCan->getUnsignedChar(0x203,6);
 
     //RIOM->VCU
     {
@@ -1308,7 +1374,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->TR1_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18B,2);
         this->TR1_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18B,4);
         this->TR1_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28B,4);
-        this->TR1_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28B,1);
+        this->TR1_1CT_MotorTemp_I16 = crrcCan->getSignedInt(0x28B,0);
         this->TR1_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28B,2);
         //this->TR1_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38B,6);
         this->TR1_1CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x28B,6);
@@ -1342,8 +1408,8 @@ void Database::updateDatabse(CrrcCan *crrcCan)
 
         this->TR1_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48B,2);
         this->TR1_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48B,4);
-        this->TR1_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1EB,4);
-        this->TR1_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1EB,1);
+        this->TR1_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1EB,4);        
+        this->TR1_2CT_MotorTemp_I16 = crrcCan->getSignedInt(0x1EB,0);
         this->TR1_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1EB,2);
         //this->TR1_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2EB,6);
         this->TR1_2CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x1EB,6);
@@ -1379,7 +1445,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->TR2_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18C,2);
         this->TR2_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18C,4);
         this->TR2_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28C,4);
-        this->TR2_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28C,1);
+        this->TR2_1CT_MotorTemp_I16 = crrcCan->getSignedInt(0x28C,0);
         this->TR2_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28C,2);
         //this->TR2_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38C,6);
         this->TR2_1CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x28C,6);
@@ -1414,7 +1480,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->TR2_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48C,2);
         this->TR2_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48C,4);
         this->TR2_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1EC,4);
-        this->TR2_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1EC,1);
+        this->TR2_2CT_MotorTemp_I16 = crrcCan->getSignedInt(0x1EC,0);
         this->TR2_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1EC,2);
         //this->TR2_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2EC,6);
         this->TR2_2CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x1EC,6);
@@ -1450,7 +1516,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->TR3_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18D,2);
         this->TR3_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18D,4);
         this->TR3_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28D,4);
-        this->TR3_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28D,1);
+        this->TR3_1CT_MotorTemp_I16 = crrcCan->getSignedInt(0x28D,0);
         this->TR3_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28D,2);
         //this->TR3_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38D,6);
         this->TR3_1CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x28D,6);
@@ -1485,7 +1551,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->TR3_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48D,2);
         this->TR3_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48D,4);
         this->TR3_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1ED,4);
-        this->TR3_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1ED,1);
+        this->TR3_2CT_MotorTemp_I16 = crrcCan->getSignedInt(0x1ED,0);
         this->TR3_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1ED,2);
         //this->TR3_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2ED,6);
         this->TR3_2CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x1ED,6);
@@ -1521,7 +1587,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->TR4_1CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x18E,2);
         this->TR4_1CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x18E,4);
         this->TR4_1CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x28E,4);
-        this->TR4_1CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x28E,1);
+        this->TR4_1CT_MotorTemp_I16 = crrcCan->getSignedInt(0x28E,0);
         this->TR4_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x28E,2);
         //this->TR4_1CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x38E,6);
         this->TR4_1CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x28E,6);
@@ -1556,7 +1622,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
         this->TR4_2CT_DynaCurrM1_U16 = crrcCan->getUnsignedInt(0x48E,2);
         this->TR4_2CT_OutputVoltM1_U16 = crrcCan->getUnsignedInt(0x48E,4);
         this->TR4_2CT_MotorSpeed_U16 = crrcCan->getUnsignedInt(0x1EE,4);
-        this->TR4_2CT_MotorTemp_U8 = crrcCan->getUnsignedChar(0x1EE,1);
+        this->TR4_2CT_MotorTemp_I16 = crrcCan->getSignedInt(0x1EE,0);
         this->TR4_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x1EE,2);
         //this->TR4_2CT_NetVoltM1_U16 = crrcCan->getUnsignedInt(0x2EE,6);
         this->TR4_2CT_Status3M1_U16 = crrcCan->getUnsignedInt(0x1EE,6);
@@ -2015,7 +2081,7 @@ void Database::updateDatabse(CrrcCan *crrcCan)
     {
         crrcCan->setBool(0xF00,0,0,this->CANopenStatus_VCU1);                                   // vcu1 offline
         crrcCan->setBool(0xF00,0,1,this->CANopenStatus_VCU2);                                   // vcu2 offline
-        crrcCan->setBool(0xF00,0,2,this->wR3Word2_net_voltage>1050);                            // net V > 1050
+        crrcCan->setBool(0xF00,0,2,(this->wR3Word2_net_voltage>1050 || this->wR4Word4_net_voltage>1050));                            // net V > 1050
         crrcCan->setBool(0xF00,0,3,bool(this->TR1_1CT_Inverter1FaultM1_B1&&
                                          this->TR1_2CT_Inverter1FaultM1_B1&&
                                          this->TR2_1CT_Inverter1FaultM1_B1&&

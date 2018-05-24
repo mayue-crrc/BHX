@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'headerpage.ui'
 **
-** Created: Tue Jul 18 10:41:17 2017
+** Created: Mon Dec 11 20:15:51 2017
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -49,6 +49,9 @@ public:
     QLabel *Line1_8;
     QLabel *headerlabel_limitspeed;
     QLabel *label_4;
+    QLabel *headerlabel_Voltage_MC2;
+    QLabel *Line1_9;
+    QLabel *label_5;
 
     void setupUi(QWidget *HeaderPage)
     {
@@ -66,90 +69,90 @@ public:
         Line2->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
         label = new QLabel(HeaderPage);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(0, 0, 61, 38));
+        label->setGeometry(QRect(0, 0, 51, 38));
         QFont font;
         font.setBold(false);
         font.setItalic(false);
         font.setWeight(50);
         label->setFont(font);
-        label->setStyleSheet(QString::fromUtf8("font:18px;\n"
+        label->setStyleSheet(QString::fromUtf8("font:16px;\n"
 "background-color: rgb(115, 115, 115);\n"
 "color: rgb(255, 255, 255);\n"
 ""));
         label->setAlignment(Qt::AlignCenter);
         Line1_2 = new QLabel(HeaderPage);
         Line1_2->setObjectName(QString::fromUtf8("Line1_2"));
-        Line1_2->setGeometry(QRect(70, 0, 2, 78));
+        Line1_2->setGeometry(QRect(114, 0, 2, 78));
         Line1_2->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
         Line1_3 = new QLabel(HeaderPage);
         Line1_3->setObjectName(QString::fromUtf8("Line1_3"));
-        Line1_3->setGeometry(QRect(150, 0, 2, 78));
+        Line1_3->setGeometry(QRect(180, 0, 2, 78));
         Line1_3->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
         Line1_4 = new QLabel(HeaderPage);
         Line1_4->setObjectName(QString::fromUtf8("Line1_4"));
-        Line1_4->setGeometry(QRect(300, 0, 2, 78));
+        Line1_4->setGeometry(QRect(320, 0, 2, 78));
         Line1_4->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
         Line1_5 = new QLabel(HeaderPage);
         Line1_5->setObjectName(QString::fromUtf8("Line1_5"));
-        Line1_5->setGeometry(QRect(410, 0, 2, 78));
+        Line1_5->setGeometry(QRect(430, 0, 2, 78));
         Line1_5->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
         Line1_6 = new QLabel(HeaderPage);
         Line1_6->setObjectName(QString::fromUtf8("Line1_6"));
-        Line1_6->setGeometry(QRect(580, 0, 2, 78));
+        Line1_6->setGeometry(QRect(590, 0, 2, 78));
         Line1_6->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
         label_2 = new QLabel(HeaderPage);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(80, 0, 61, 38));
-        label_2->setStyleSheet(QString::fromUtf8("font: 18px;\n"
+        label_2->setGeometry(QRect(120, 0, 51, 38));
+        label_2->setStyleSheet(QString::fromUtf8("font: 16px;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         label_2->setAlignment(Qt::AlignCenter);
         label_3 = new QLabel(HeaderPage);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(160, 0, 131, 38));
-        label_3->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
+        label_3->setGeometry(QRect(190, 0, 121, 38));
+        label_3->setStyleSheet(QString::fromUtf8("font: 75  16px ;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         label_3->setAlignment(Qt::AlignCenter);
         headerlabel_Voltage = new QLabel(HeaderPage);
         headerlabel_Voltage->setObjectName(QString::fromUtf8("headerlabel_Voltage"));
-        headerlabel_Voltage->setGeometry(QRect(0, 42, 61, 36));
+        headerlabel_Voltage->setGeometry(QRect(0, 42, 51, 36));
         headerlabel_Voltage->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_Voltage->setAlignment(Qt::AlignCenter);
         headerlabel_Current = new QLabel(HeaderPage);
         headerlabel_Current->setObjectName(QString::fromUtf8("headerlabel_Current"));
-        headerlabel_Current->setGeometry(QRect(80, 42, 61, 36));
+        headerlabel_Current->setGeometry(QRect(120, 42, 51, 36));
         headerlabel_Current->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_Current->setAlignment(Qt::AlignCenter);
         headerlabel_24VVoltage = new QLabel(HeaderPage);
         headerlabel_24VVoltage->setObjectName(QString::fromUtf8("headerlabel_24VVoltage"));
-        headerlabel_24VVoltage->setGeometry(QRect(160, 42, 131, 36));
-        headerlabel_24VVoltage->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
+        headerlabel_24VVoltage->setGeometry(QRect(190, 42, 121, 36));
+        headerlabel_24VVoltage->setStyleSheet(QString::fromUtf8("font: 75  16px ;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_24VVoltage->setAlignment(Qt::AlignCenter);
         headerlabel_Date = new QLabel(HeaderPage);
         headerlabel_Date->setObjectName(QString::fromUtf8("headerlabel_Date"));
-        headerlabel_Date->setGeometry(QRect(307, 0, 100, 38));
-        headerlabel_Date->setStyleSheet(QString::fromUtf8("font: 75  18px;\n"
+        headerlabel_Date->setGeometry(QRect(330, 0, 91, 38));
+        headerlabel_Date->setStyleSheet(QString::fromUtf8("font: 75  16px;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_Date->setAlignment(Qt::AlignCenter);
         headerlabel_Time = new QLabel(HeaderPage);
         headerlabel_Time->setObjectName(QString::fromUtf8("headerlabel_Time"));
-        headerlabel_Time->setGeometry(QRect(307, 42, 100, 36));
-        headerlabel_Time->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
+        headerlabel_Time->setGeometry(QRect(330, 42, 91, 36));
+        headerlabel_Time->setStyleSheet(QString::fromUtf8("font: 75  16px ;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_Time->setAlignment(Qt::AlignCenter);
         headerlabel_Positon = new QLabel(HeaderPage);
         headerlabel_Positon->setObjectName(QString::fromUtf8("headerlabel_Positon"));
-        headerlabel_Positon->setGeometry(QRect(420, 0, 160, 38));
-        headerlabel_Positon->setStyleSheet(QString::fromUtf8("font: 75  18px;\n"
+        headerlabel_Positon->setGeometry(QRect(440, 0, 141, 38));
+        headerlabel_Positon->setStyleSheet(QString::fromUtf8("font: 75  16px;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_Positon->setAlignment(Qt::AlignCenter);
@@ -164,15 +167,15 @@ public:
         CurrentFaultBtn->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/images/fault.bmp);"));
         headerlabel_Level = new QLabel(HeaderPage);
         headerlabel_Level->setObjectName(QString::fromUtf8("headerlabel_Level"));
-        headerlabel_Level->setGeometry(QRect(420, 42, 81, 36));
-        headerlabel_Level->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
+        headerlabel_Level->setGeometry(QRect(440, 42, 71, 36));
+        headerlabel_Level->setStyleSheet(QString::fromUtf8("font: 75  16px ;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_Level->setAlignment(Qt::AlignCenter);
         headerlabel_speed = new QLabel(HeaderPage);
         headerlabel_speed->setObjectName(QString::fromUtf8("headerlabel_speed"));
-        headerlabel_speed->setGeometry(QRect(500, 42, 80, 36));
-        headerlabel_speed->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
+        headerlabel_speed->setGeometry(QRect(509, 42, 71, 36));
+        headerlabel_speed->setStyleSheet(QString::fromUtf8("font: 75  16px ;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         headerlabel_speed->setAlignment(Qt::AlignCenter);
@@ -197,16 +200,36 @@ public:
         Line1_8->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
         headerlabel_limitspeed = new QLabel(HeaderPage);
         headerlabel_limitspeed->setObjectName(QString::fromUtf8("headerlabel_limitspeed"));
-        headerlabel_limitspeed->setGeometry(QRect(587, 42, 80, 36));
+        headerlabel_limitspeed->setGeometry(QRect(596, 42, 71, 36));
         headerlabel_limitspeed->setStyleSheet(QString::fromUtf8(""));
         headerlabel_limitspeed->setAlignment(Qt::AlignCenter);
         label_4 = new QLabel(HeaderPage);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(587, 0, 80, 38));
-        label_4->setStyleSheet(QString::fromUtf8("font: 18px;\n"
+        label_4->setGeometry(QRect(596, 0, 71, 38));
+        label_4->setStyleSheet(QString::fromUtf8("font: 16px;\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(115, 115, 115);"));
         label_4->setAlignment(Qt::AlignCenter);
+        headerlabel_Voltage_MC2 = new QLabel(HeaderPage);
+        headerlabel_Voltage_MC2->setObjectName(QString::fromUtf8("headerlabel_Voltage_MC2"));
+        headerlabel_Voltage_MC2->setGeometry(QRect(60, 42, 51, 36));
+        headerlabel_Voltage_MC2->setStyleSheet(QString::fromUtf8("font: 75  18px ;\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(115, 115, 115);"));
+        headerlabel_Voltage_MC2->setAlignment(Qt::AlignCenter);
+        Line1_9 = new QLabel(HeaderPage);
+        Line1_9->setObjectName(QString::fromUtf8("Line1_9"));
+        Line1_9->setGeometry(QRect(55, 0, 2, 78));
+        Line1_9->setStyleSheet(QString::fromUtf8("background-color: rgb(191, 191, 191);"));
+        label_5 = new QLabel(HeaderPage);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(60, 0, 51, 38));
+        label_5->setFont(font);
+        label_5->setStyleSheet(QString::fromUtf8("font:16px;\n"
+"background-color: rgb(115, 115, 115);\n"
+"color: rgb(255, 255, 255);\n"
+""));
+        label_5->setAlignment(Qt::AlignCenter);
         header_background->raise();
         Line1->raise();
         Line2->raise();
@@ -232,6 +255,9 @@ public:
         Line1_8->raise();
         headerlabel_limitspeed->raise();
         label_4->raise();
+        headerlabel_Voltage_MC2->raise();
+        Line1_9->raise();
+        label_5->raise();
 
         retranslateUi(HeaderPage);
 
@@ -243,7 +269,8 @@ public:
         HeaderPage->setWindowTitle(QApplication::translate("HeaderPage", "Form", 0, QApplication::UnicodeUTF8));
         Line1->setText(QString());
         Line2->setText(QString());
-        label->setText(QApplication::translate("HeaderPage", "\347\275\221\345\216\213", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("HeaderPage", "TP1\n"
+"\347\275\221\345\216\213", 0, QApplication::UnicodeUTF8));
         Line1_2->setText(QString());
         Line1_3->setText(QString());
         Line1_4->setText(QString());
@@ -266,6 +293,10 @@ public:
         Line1_8->setText(QString());
         headerlabel_limitspeed->setText(QString());
         label_4->setText(QApplication::translate("HeaderPage", "\351\231\220\351\200\237\345\200\274", 0, QApplication::UnicodeUTF8));
+        headerlabel_Voltage_MC2->setText(QString());
+        Line1_9->setText(QString());
+        label_5->setText(QApplication::translate("HeaderPage", "TP2\n"
+"\347\275\221\345\216\213", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

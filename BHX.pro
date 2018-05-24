@@ -65,7 +65,8 @@ SOURCES += main.cpp\
     vehiclealarmwidget.cpp \
     vehiclefactorytestpage.cpp \
     vehiclefactorytestpage2.cpp \
-    ctrlalarmbarh.cpp
+    ctrlalarmbarh.cpp \
+    vehiclewheelsetpage.cpp
 
 HEADERS  += mainwidget.h \
     basepage.h \
@@ -120,7 +121,9 @@ HEADERS  += mainwidget.h \
     vehiclealarmwidget.h \
     vehiclefactorytestpage.h \
     vehiclefactorytestpage2.h \
-    ctrlalarmbarh.h
+    ctrlalarmbarh.h \
+    vehiclewheelsetpage.h \
+    can4linux.h
 
 FORMS    += mainwidget.ui \
     headerpage.ui \
@@ -170,7 +173,8 @@ FORMS    += mainwidget.ui \
     vehiclealarmwidget.ui \
     vehiclefactorytestpage.ui \
     vehiclefactorytestpage2.ui \
-    ctrlalarmbarh.ui
+    ctrlalarmbarh.ui \
+    vehiclewheelsetpage.ui
 
 RESOURCES += \
     Resource.qrc

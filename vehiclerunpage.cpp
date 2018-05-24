@@ -1,6 +1,11 @@
 #include "vehiclerunpage.h"
 #include "ui_vehiclerunpage.h"
 
+#define LABELSTYLE_LEVEL1 "border: 2px solid color(0, 0, 0);background-color: rgb(255, 255, 255);font: 14px;color: rgb(255, 0, 0);"
+#define LABELSTYLE_LEVEL2 "border: 2px solid color(0, 0, 0);background-color: rgb(255, 255, 255);font: 14px;color: rgb(200, 100, 0)"
+#define LABELSTYLE_LEVEL3 "border: 2px solid color(0, 0, 0);background-color: rgb(255, 255, 255);font: 14px;color: rgb(0, 0, 0)"
+
+
 VehicleRunPage::VehicleRunPage(QWidget *parent) :
     BasePage(parent),
     ui(new Ui::VehicleRunPage)
@@ -16,12 +21,22 @@ VehicleRunPage::VehicleRunPage(QWidget *parent) :
     TrainDiagram->setGeometry(300,5,TrainDiagram->width(),TrainDiagram->height());
 
     Countdown = new CtrlCountdown(this);
-    Countdown->setGeometry(145,250,Countdown->width(),Countdown->height());
+    Countdown->setGeometry(115,225,Countdown->width(),Countdown->height());
 
 
     VCU1Lifesignal_old = 0;
     VCU2Lifesignal_old = 0;
     timer4s = 0;
+
+    m_FaultIndex = 0;
+    m_rollingfaultstart = false;
+    m_rollingfaultcnt = 0;
+
+    this->ui->VRun_label_faultpos->hide();
+    this->ui->VRun_label_faultdevice->hide();
+    this->ui->VRun_label_faultname->hide();
+    this->ui->VRun_btn_confirm->hide();
+    this->ui->VRun_btn_confirmall->hide();
 }
 
 VehicleRunPage::~VehicleRunPage()
@@ -32,10 +47,19 @@ void VehicleRunPage::showEvent(QShowEvent *e)
 {
 
 }
+
+void VehicleRunPage::GetcrrcFaultInfo(CrrcFault* CrrcFault)
+{
+    m_crrcFault = CrrcFault;
+}
+void VehicleRunPage::startRollingFault(bool flg)
+{
+    m_rollingfaultstart = flg;
+}
 void VehicleRunPage::updatePage()
 {
-    ui->VRun_label_totalmil->setText("累计行驶: "+QString::number(this->database->wR2Word2_Distance_high*65535 + this->database->wR2Word3_Distance_low) +" km");
-    ui->VRun_label_todaymil->setText("今日行驶: "+QString::number(this->database->wR3Word3_wdiDistance) +" km");
+    ui->VRun_label_totalmil->setText("累计行驶: "+QString::number(this->database->wR2Word2_Distance_high*65535 + this->database->wR2Word3_Distance_low) +"km");
+    ui->VRun_label_todaymil->setText("今日行驶: "+QString::number(this->database->wR3Word3_wdiDistance) +"km");
 
 
     LevelBar->Ctrl_SetLevelvalue(this->database->Master_controller_level);
@@ -51,6 +75,8 @@ void VehicleRunPage::updatePage()
     updateRunstatus();
     // train states
     updateTrainstatus();
+    // confirm fault
+    updateConfirmFault();
     this->update();
 
 }
@@ -366,10 +392,59 @@ void VehicleRunPage::updateOnlinestatus()
         ui->VRun_label_MC2S1->setStyleSheet(LABELONLINE_WHITE);
     }
 
+    if(this->database->CANopenStatus_ATC1)
+    {
+        if(this->database->riomSgnIn19Mc1)
+        {
+            ui->VRun_label_ATC1->setStyleSheet(LABELONLINE_GREEN);
+        }else
+        {
+            ui->VRun_label_ATC1->setStyleSheet(LABELONLINE_YELLOW);
+        }
+    }else
+    {
+        ui->VRun_label_ATC1->setStyleSheet(LABELONLINE_WHITE);
+    }
 
+    if(this->database->CANopenStatus_ATC2)
+    {
+        if(this->database->riomSgnIn19Mc2)
+        {
+            ui->VRun_label_ATC2->setStyleSheet(LABELONLINE_GREEN);
+        }else
+        {
+            ui->VRun_label_ATC2->setStyleSheet(LABELONLINE_YELLOW);
+        }
+    }else
+    {
+        ui->VRun_label_ATC2->setStyleSheet(LABELONLINE_WHITE);
+    }
 }
 void VehicleRunPage::updateRunstatus()
 {
+
+    //打滑
+    QList<bool> tmp;
+    tmp<<this->database->TR1_1CT_Motor1SlideM1_B1<<this->database->TR1_2CT_Motor1SlideM1_B1
+        <<this->database->TR2_1CT_Motor1SlideM1_B1<<this->database->TR2_2CT_Motor1SlideM1_B1
+        <<this->database->TR3_1CT_Motor1SlideM1_B1<<this->database->TR3_2CT_Motor1SlideM1_B1
+        <<this->database->TR4_1CT_Motor1SlideM1_B1<<this->database->TR4_2CT_Motor1SlideM1_B1;
+    int cnt = 0;
+    for(int i = 0; i < tmp.size();i++)
+    {
+        if(tmp.at(i))
+        {
+            cnt++;
+        }
+    }
+    if(cnt>1)
+    {
+        this->ui->VRun_label_flip->show();
+    }else
+    {
+        this->ui->VRun_label_flip->hide();
+    }
+
     // BCC
     if(this->database->CANopenStatus_BCC1)
     {
@@ -442,7 +517,7 @@ void VehicleRunPage::updateRunstatus()
     // ACU
     if(this->database->CANopenStatus_ACU1)
     {
-        if(this->database->AU1CT_StateOK_B1 || (this->database->riomDi1In20Mc1))
+        if(this->database->AU1CT_StateOK_B1)
         {
             ui->VRun_label_ACUState1->setStyleSheet(LABELONLINE_RED);
         }else if(!this->database->AU1CT_Stop_B1)
@@ -459,7 +534,7 @@ void VehicleRunPage::updateRunstatus()
 
     if(this->database->CANopenStatus_ACU2)
     {
-        if(this->database->AU2CT_StateOK_B1|| (this->database->riomDi1In20M1))
+        if(this->database->AU2CT_StateOK_B1)
         {
             ui->VRun_label_ACUState2->setStyleSheet(LABELONLINE_RED);
         }else if(!this->database->AU2CT_Stop_B1)
@@ -475,7 +550,7 @@ void VehicleRunPage::updateRunstatus()
     }
     if(this->database->CANopenStatus_ACU3)
     {
-        if(this->database->AU3CT_StateOK_B1|| (this->database->riomDi1In20M2))
+        if(this->database->AU3CT_StateOK_B1)
         {
             ui->VRun_label_ACUState3->setStyleSheet(LABELONLINE_RED);
         }else if(!this->database->AU3CT_Stop_B1)
@@ -491,7 +566,7 @@ void VehicleRunPage::updateRunstatus()
     }
     if(this->database->CANopenStatus_ACU4)
     {
-        if(this->database->AU4CT_StateOK_B1|| (this->database->riomDi1In20Mc2))
+        if(this->database->AU4CT_StateOK_B1)
         {
             ui->VRun_label_ACUState4->setStyleSheet(LABELONLINE_RED);
         }else if(!this->database->AU4CT_Stop_B1)
@@ -799,6 +874,38 @@ void VehicleRunPage::updateRunstatus()
         ui->VRun_label_TCUState4->setStyleSheet(LABELONLINE_WHITE);
         ui->VRun_label_TCUState4_2->setStyleSheet(LABELONLINE_WHITE);
     }
+    //add bypass tips
+    if(this->database->riomSgnIn3Mc1 || this->database->riomSgnIn3Mc2)
+    {
+        ui->VRun_label_bypassEDCU->show();
+    }else
+    {
+        ui->VRun_label_bypassEDCU->hide();
+    }
+
+    if(this->database->riomDi2In7Mc1 || this->database->riomDi2In7Mc2)
+    {
+        ui->VRun_label_bypass0speed->show();
+    }else
+    {
+        ui->VRun_label_bypass0speed->hide();
+    }
+
+    if(this->database->riomDi2In24Mc1 || this->database->riomDi2In24Mc2)
+    {
+        ui->VRun_label_bypassATCEDCU->show();
+    }else
+    {
+        ui->VRun_label_bypassATCEDCU->hide();
+    }
+
+    if(this->database->riomSgnIn17Mc1 || this->database->riomSgnIn17Mc2)
+    {
+        ui->VRun_label_bypassALL->show();
+    }else
+    {
+        ui->VRun_label_bypassALL->hide();
+    }
 }
 void VehicleRunPage::updateTrainstatus()
 {
@@ -1073,6 +1180,112 @@ void VehicleRunPage::updateTrainstatus()
         TrainDiagram->SetM2BrakeStates(3);
     }
 }
+void VehicleRunPage::updateConfirmFault()
+{
+
+    if(m_rollingfaultstart)
+    {
+
+
+        if(m_crrcFault->getConfirmFaultListSize() > 0)
+        {
+
+            this->ui->VRun_label_faultpos->show();
+            this->ui->VRun_label_faultdevice->show();
+            this->ui->VRun_label_faultname->show();
+            this->ui->VRun_btn_confirm->show();
+            this->ui->VRun_btn_confirmall->show();
+
+            // 当有新故障时，列表从0开始滚动
+            if(m_crrcFault->NewFaultOccur)
+            {
+                m_FaultIndex = 0;
+            }
+
+
+            if(m_rollingfaultcnt++>10)
+            {
+                m_rollingfaultcnt = 0;
+                if(m_FaultIndex < m_crrcFault->getConfirmFaultListSize()-1)
+                {
+                    m_FaultIndex++;
+                }else
+                {
+                    m_FaultIndex = 0;
+                }
+
+
+
+            }
+
+            if(m_crrcFault->getConfirmFaultCode(m_FaultIndex).mid(1,1) == "1")
+            {
+                this->ui->VRun_label_faultpos->setStyleSheet(LABELSTYLE_LEVEL1);
+                this->ui->VRun_label_faultdevice->setStyleSheet(LABELSTYLE_LEVEL1);
+                this->ui->VRun_label_faultname->setStyleSheet(LABELSTYLE_LEVEL1);
+
+            }else if(m_crrcFault->getConfirmFaultCode(m_FaultIndex).mid(1,1) == "2")
+            {
+                this->ui->VRun_label_faultpos->setStyleSheet(LABELSTYLE_LEVEL2);
+                this->ui->VRun_label_faultdevice->setStyleSheet(LABELSTYLE_LEVEL2);
+                this->ui->VRun_label_faultname->setStyleSheet(LABELSTYLE_LEVEL2);
+            }else
+            {
+                this->ui->VRun_label_faultpos->setStyleSheet(LABELSTYLE_LEVEL3);
+                this->ui->VRun_label_faultdevice->setStyleSheet(LABELSTYLE_LEVEL3);
+                this->ui->VRun_label_faultname->setStyleSheet(LABELSTYLE_LEVEL3);
+            }
+
+            QString tmp_faultdevice;
+            if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "TCMS")
+            {
+                tmp_faultdevice = "网络";
+            }else if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "TCU")
+            {
+                tmp_faultdevice = "牵引";
+            }else if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "ACU")
+            {
+                tmp_faultdevice = "辅助";
+            }else if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "BCU")
+            {
+                tmp_faultdevice = "制动";
+            }else if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "EDCU")
+            {
+                tmp_faultdevice = "车门";
+            }else if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "PIS")
+            {
+                tmp_faultdevice = "PIS";
+            }else if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "HVAC")
+            {
+                tmp_faultdevice = "空调";
+            }else if(m_crrcFault->getConfirmFaultDevice(m_FaultIndex) == "BCC")
+            {
+                tmp_faultdevice = "充电机";
+            }else
+            {
+                tmp_faultdevice = "--";
+            }
+
+            this->ui->VRun_label_faultpos->setText(m_crrcFault->getConfirmFaultPosition(m_FaultIndex));
+            this->ui->VRun_label_faultdevice->setText(tmp_faultdevice);
+            this->ui->VRun_label_faultname->setText(m_crrcFault->getConfirmFaultName(m_FaultIndex));
+        }else
+        {
+            this->ui->VRun_label_faultpos->setText("");
+            this->ui->VRun_label_faultdevice->setText("");
+            this->ui->VRun_label_faultname->setText("");
+
+            this->ui->VRun_label_faultpos->hide();
+            this->ui->VRun_label_faultdevice->hide();
+            this->ui->VRun_label_faultname->hide();
+            this->ui->VRun_btn_confirm->hide();
+            this->ui->VRun_btn_confirmall->hide();
+
+        }
+    }
+}
+
+
 int VehicleRunPage::setDoorstates(bool open,bool close,bool emlock,bool iso,bool atcing,bool orb,bool offline)
 {
     /*
@@ -1114,5 +1327,32 @@ int VehicleRunPage::setDoorstates(bool open,bool close,bool emlock,bool iso,bool
         {
             return 8;
         }
+    }
+}
+
+void VehicleRunPage::on_VRun_btn_confirm_pressed()
+{
+    if(m_crrcFault->getConfirmFaultListSize()>0)
+    {
+       m_rollingfaultcnt = 0;
+
+
+       m_crrcFault->deleteConfirmFault(m_FaultIndex);
+
+       if(m_FaultIndex>=m_crrcFault->getConfirmFaultListSize() && m_FaultIndex>0)
+       {
+            m_FaultIndex--;
+       }
+    }
+
+}
+
+void VehicleRunPage::on_VRun_btn_confirmall_pressed()
+{
+    if(m_crrcFault->getConfirmFaultListSize()>0)
+    {
+        m_crrcFault->deleteAllconfirmFault();
+        m_FaultIndex = 0;
+        m_rollingfaultcnt = 0;
     }
 }

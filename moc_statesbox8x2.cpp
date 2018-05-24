@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'statesbox8x2.h'
 **
-** Created: Thu Jul 13 16:43:19 2017
+** Created: Sat Oct 14 09:27:39 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

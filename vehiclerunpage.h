@@ -6,6 +6,7 @@
 #include "ctrlspeedometer.h"
 #include "ctrltraindiagram.h"
 #include "ctrlcountdown.h"
+#include "crrcfault.h"
 
 namespace Ui {
     class VehicleRunPage;
@@ -20,6 +21,8 @@ public:
     ~VehicleRunPage();
     void showEvent(QShowEvent *);
     void updatePage();
+    void GetcrrcFaultInfo(CrrcFault* CrrcFault);
+    void startRollingFault(bool flg);
 
 private:
     Ui::VehicleRunPage *ui;
@@ -33,6 +36,18 @@ private:
     void updateTrainstatus();
     int timer4s;///0.333*13
     int setDoorstates(bool open,bool close,bool emlock,bool iso,bool atcing,bool orb,bool offline);
+
+    CrrcFault* m_crrcFault;
+    int m_FaultIndex;
+    bool m_rollingfaultstart;
+    int m_rollingfaultcnt;
+
+    void updateConfirmFault();
+
+
+private slots:
+    void on_VRun_btn_confirmall_pressed();
+    void on_VRun_btn_confirm_pressed();
 };
 
 #endif // VEHICLERUNPAGE_H

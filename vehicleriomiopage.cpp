@@ -131,22 +131,22 @@ void VehicleRIOMIOPage::showEvent(QShowEvent *)
     MC1name << QString("DI1")
          << QString("I1 牵引状态") << QString("I2 制动状态") << QString("I3 紧急制动状态") << QString("I4 方向指令F")
          << QString("I5 方向指令B") << QString("I6 惰行位") << QString("I7 ENcode1") << QString("I8 ENcode2")
-         << QString("I9 ENcode3") << QString("I10 牵引熔断器状态") << QString("I11 辅助熔断器状态") << QString("I12 备用")
+         << QString("I9 ENcode3") << QString("I10 牵引熔断器状态") << QString("I11 辅助熔断器状态") << QString("I12 ATO保持制动")
          << QString("I13 撒沙指令") << QString("I14 试灯按钮") << QString("I15 牵引准备就绪") << QString("I16 电制动1正常")
          << QString("I17 电制动2正常") << QString("I18 保持制动施加") << QString("I19 车辆滑行指示") << QString("I20 辅助逆变器正常")
-         << QString("I21 备用") << QString("I22 制动无故障(MC)") << QString("I23 左侧沙箱沙位") << QString("I24 右侧沙箱沙位");
+         << QString("I21 ATP切除") << QString("I22 制动无故障(MC)") << QString("I23 左侧沙箱沙位") << QString("I24 右侧沙箱沙位");
     dicontrol1->initialName(MC1name);
     MC1name.clear();
 
 
 
     MC1name << QString("DI2")
-         << QString("I1 备用") << QString("I2 备用") << QString("I3 客室电热") << QString("I4 洗车开关")
+         << QString("I1 ATO模式") << QString("I2 折返") << QString("I3 客室电热") << QString("I4 洗车开关")
          << QString("I5 出库模式开关") << QString("I6 电热玻璃") << QString("I7 零速旁路") << QString("I8 制动全部缓解")
          << QString("I9 牵引冷却风机空开") << QString("I10 升弓指令") << QString("I11 降弓指令") << QString("I12 车门允许(左)")
          << QString("I13 车门允许(右)") << QString("I14 左开门指令(左)") << QString("I15 右开门指令(右)") << QString("I16 左关门指令")
          << QString("I17 右关门指令") << QString("I18 牵引安全") << QString("I19 撒沙风泵状态") << QString("I20 制动无故障(TP)")
-         << QString("I21 制动无报警(TP)") << QString("I22 防滑保护激活(TP)") << QString("I23 轮缘轮滑故障") << QString("I24 备用");
+         << QString("I21 制动无报警(TP)") << QString("I22 防滑保护激活(TP)") << QString("I23 轮缘轮滑故障") << QString("I24 ATP门旁路开关");
     dicontrol2->initialName(MC1name);
     MC1name.clear();
 
@@ -181,7 +181,7 @@ void VehicleRIOMIOPage::showEvent(QShowEvent *)
          << QString("I5 安全制动") << QString("I6 磁轨制动(MC)") << QString("I7 制动手动缓解(MC)") << QString("I8 牵车开关信号")
          << QString("I9 门全关闭") << QString("I10 蓄电池接触器") << QString("I11 蓄电池电热") << QString("I12 交流输出接触器")
          << QString("I13 拖车磁轨制动(TP)") << QString("I14 拖车制动缓解(TP)") << QString("I15 左零速") << QString("I16 右零速")
-         << QString("I17 全常用制动") << QString("I18 切除牵引") << QString("I19 ATP运行") << QString("I20 隔离开关")
+         << QString("I17 列车完整性旁路") << QString("I18 切除牵引") << QString("I19 ATP运行") << QString("I20 隔离开关")
          << QString("I21 备用") << QString("I22 备用") << QString("I23 备用") << QString("I24 备用");
     dicontrol3->initialName(MC1name);
     MC1name.clear();

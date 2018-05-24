@@ -12,5 +12,6 @@
         <file>images/dooriso.bmp</file>
         <file>images/warning.bmp</file>
         <file>images/fault.bmp</file>
+        <file>images/input.jpg</file>
     </qresource>
 </RCC>

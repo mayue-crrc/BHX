@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'ctrlinputmodule.ui'
 **
-** Created: Thu Jul 13 16:42:49 2017
+** Created: Sat Oct 14 09:26:49 2017
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -44,11 +44,11 @@ public:
     {
         if (CtrlInputModule->objectName().isEmpty())
             CtrlInputModule->setObjectName(QString::fromUtf8("CtrlInputModule"));
-        CtrlInputModule->resize(400, 300);
+        CtrlInputModule->resize(500, 350);
         CtrlInputModule->setStyleSheet(QString::fromUtf8(""));
         CtrlInputModule_Button_Num0 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num0->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num0"));
-        CtrlInputModule_Button_Num0->setGeometry(QRect(10, 90, 60, 60));
+        CtrlInputModule_Button_Num0->setGeometry(QRect(60, 110, 60, 60));
         CtrlInputModule_Button_Num0->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num0->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -57,7 +57,7 @@ public:
 ""));
         CtrlInputModule_Button_Num1 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num1->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num1"));
-        CtrlInputModule_Button_Num1->setGeometry(QRect(90, 90, 60, 60));
+        CtrlInputModule_Button_Num1->setGeometry(QRect(140, 110, 60, 60));
         CtrlInputModule_Button_Num1->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num1->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -66,7 +66,7 @@ public:
 ""));
         CtrlInputModule_Button_Num2 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num2->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num2"));
-        CtrlInputModule_Button_Num2->setGeometry(QRect(170, 90, 60, 60));
+        CtrlInputModule_Button_Num2->setGeometry(QRect(220, 110, 60, 60));
         CtrlInputModule_Button_Num2->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num2->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -75,7 +75,7 @@ public:
 ""));
         CtrlInputModule_Button_Num3 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num3->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num3"));
-        CtrlInputModule_Button_Num3->setGeometry(QRect(250, 90, 60, 60));
+        CtrlInputModule_Button_Num3->setGeometry(QRect(300, 110, 60, 60));
         CtrlInputModule_Button_Num3->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num3->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -84,7 +84,7 @@ public:
 ""));
         CtrlInputModule_Button_Num4 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num4->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num4"));
-        CtrlInputModule_Button_Num4->setGeometry(QRect(330, 90, 60, 60));
+        CtrlInputModule_Button_Num4->setGeometry(QRect(380, 110, 60, 60));
         CtrlInputModule_Button_Num4->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num4->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -93,7 +93,7 @@ public:
 ""));
         CtrlInputModule_Button_Num6 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num6->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num6"));
-        CtrlInputModule_Button_Num6->setGeometry(QRect(90, 160, 60, 60));
+        CtrlInputModule_Button_Num6->setGeometry(QRect(140, 180, 60, 60));
         CtrlInputModule_Button_Num6->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num6->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -102,7 +102,7 @@ public:
 ""));
         CtrlInputModule_Button_Num5 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num5->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num5"));
-        CtrlInputModule_Button_Num5->setGeometry(QRect(10, 160, 60, 60));
+        CtrlInputModule_Button_Num5->setGeometry(QRect(60, 180, 60, 60));
         CtrlInputModule_Button_Num5->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num5->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -111,7 +111,7 @@ public:
 ""));
         CtrlInputModule_Button_Num7 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num7->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num7"));
-        CtrlInputModule_Button_Num7->setGeometry(QRect(170, 160, 60, 60));
+        CtrlInputModule_Button_Num7->setGeometry(QRect(220, 180, 60, 60));
         CtrlInputModule_Button_Num7->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num7->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -120,7 +120,7 @@ public:
 ""));
         CtrlInputModule_Button_Num8 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num8->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num8"));
-        CtrlInputModule_Button_Num8->setGeometry(QRect(250, 160, 60, 60));
+        CtrlInputModule_Button_Num8->setGeometry(QRect(300, 180, 60, 60));
         CtrlInputModule_Button_Num8->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num8->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -129,7 +129,7 @@ public:
 ""));
         CtrlInputModule_Button_Num9 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num9->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num9"));
-        CtrlInputModule_Button_Num9->setGeometry(QRect(330, 160, 60, 60));
+        CtrlInputModule_Button_Num9->setGeometry(QRect(380, 180, 60, 60));
         CtrlInputModule_Button_Num9->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num9->setStyleSheet(QString::fromUtf8("font: 75 bold 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -138,7 +138,7 @@ public:
 ""));
         CtrlInputModule_Button_clear = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_clear->setObjectName(QString::fromUtf8("CtrlInputModule_Button_clear"));
-        CtrlInputModule_Button_clear->setGeometry(QRect(10, 230, 141, 50));
+        CtrlInputModule_Button_clear->setGeometry(QRect(60, 250, 141, 50));
         CtrlInputModule_Button_clear->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_clear->setStyleSheet(QString::fromUtf8("font: 75 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -147,7 +147,7 @@ public:
 ""));
         CtrlInputModule_Button_confirm = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_confirm->setObjectName(QString::fromUtf8("CtrlInputModule_Button_confirm"));
-        CtrlInputModule_Button_confirm->setGeometry(QRect(170, 230, 141, 50));
+        CtrlInputModule_Button_confirm->setGeometry(QRect(220, 250, 141, 50));
         CtrlInputModule_Button_confirm->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_confirm->setStyleSheet(QString::fromUtf8("font: 75 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
@@ -156,19 +156,19 @@ public:
 ""));
         CtrlInputModule_Label_InputPW = new QLabel(CtrlInputModule);
         CtrlInputModule_Label_InputPW->setObjectName(QString::fromUtf8("CtrlInputModule_Label_InputPW"));
-        CtrlInputModule_Label_InputPW->setGeometry(QRect(70, 20, 261, 51));
+        CtrlInputModule_Label_InputPW->setGeometry(QRect(120, 40, 261, 51));
         CtrlInputModule_Label_InputPW->setStyleSheet(QString::fromUtf8("font: 75 bold 34px ;\n"
 "color: rgb(255, 255, 255);\n"
 "border:3px solid rgb(102,154,204);"));
         CtrlInputModule_Label_InputPW->setAlignment(Qt::AlignCenter);
         CtrlInputModule_background = new QLabel(CtrlInputModule);
         CtrlInputModule_background->setObjectName(QString::fromUtf8("CtrlInputModule_background"));
-        CtrlInputModule_background->setGeometry(QRect(0, 0, 400, 300));
+        CtrlInputModule_background->setGeometry(QRect(0, 0, 500, 350));
         CtrlInputModule_background->setStyleSheet(QString::fromUtf8("background-color: rgb(45, 45, 45);\n"
 "border:2px solid rgb(255,255,255);"));
         CtrlInputModule_Button_Num0_2 = new QPushButton(CtrlInputModule);
         CtrlInputModule_Button_Num0_2->setObjectName(QString::fromUtf8("CtrlInputModule_Button_Num0_2"));
-        CtrlInputModule_Button_Num0_2->setGeometry(QRect(330, 230, 60, 50));
+        CtrlInputModule_Button_Num0_2->setGeometry(QRect(380, 250, 60, 50));
         CtrlInputModule_Button_Num0_2->setFocusPolicy(Qt::NoFocus);
         CtrlInputModule_Button_Num0_2->setStyleSheet(QString::fromUtf8("font: 75 18px ;\n"
 "background-color: rgb(255, 255, 0);\n"
